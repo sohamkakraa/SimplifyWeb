@@ -1,30 +1,51 @@
-<div class="table">
-    <tr class="titlebar">
-        <th class="userid">User ID</th>
-        <th class="username">User Name <img src="assets/Vectorup.svg" class="username up"><img src="assets/Vectordown.svg" class="username down"></th>
-        <th class="role">Role <img src="assets/Vectorup.svg" class="role up"><img src="assets/Vectordown.svg" class="role down"></th>
-        <th class="usertype">User Type <img src="assets/Vectorup.svg" class="usertype up"><img src="assets/Vectordown.svg" class="usertype down"></th>
-        <th class="customers">#Customers</th>
-        <th class="updtOn">Updated On <img src="assets/Vectorup.svg" class="updtOn up"><img src="assets/Vectordown.svg" class="updtOn down"></th>
-        <th class="status">Status <img src="assets/Vectorup.svg" class="status up"><img src="assets/Vectordown.svg" class="status down"></th>
-        <th class="actions">Actions</th>
-    </tr>
-    <tr class="rows" *ngFor = "let user of users">
-        <th class="userid idRow">{{ user.id }}</th>
-        <th class="nameRow">
-            <p>{{ user.firstname }} {{ user.lastname }}</p>
-            <p class="nameRow emailid">{{ user.emailid }}</p>
-        </th>
-        <th class="idRow">{{ user.role }}</th>
-        <th class="idRow">{{ user.usertype }}</th>
-        <th class="idRow">{{ user.customers }}</th>
-        <th class="nameRow">
-            <p>{{ user.updatedOnDate }}</p>
-            <p class="nameRow emailid">{{ user.updatedOnTime }}</p>
-        </th>
-        <th class="idRow">{{ user.status }}</th>
+<table mat-table [dataSource]="dataSource" class="table">
 
+    <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> User ID </th>
+        <td mat-cell *matCellDef="let user"> {{user.id}} </td>
+    </ng-container>
 
-    </tr>
+    <ng-container matColumnDef="username">
+        <th mat-header-cell *matHeaderCellDef> User Name </th>
+        <td mat-cell *matCellDef="let user"> 
+            <p>{{user.firstname}} {{user.lastname}}</p>
+            <p class="emailid">{{user.emailid}}</p>
+        </td>
+    </ng-container>
 
-</div>
+    <ng-container matColumnDef="role">
+        <th mat-header-cell *matHeaderCellDef> Role </th> 
+        <td mat-cell *matCellDef="let user"> {{roleManager(user.role)}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="usertype">
+        <th mat-header-cell *matHeaderCellDef> User Type </th>
+        <td mat-cell *matCellDef="let user"> {{user.usertype}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="customers">
+        <th mat-header-cell *matHeaderCellDef> #Customers </th>
+        <td mat-cell *matCellDef="let user"> {{customerManager(user.customers)}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="updatedOn">
+        <th mat-header-cell *matHeaderCellDef> Updated On </th>
+        <td mat-cell *matCellDef="let user"> 
+            <p>{{user.updatedOnDate}}</p>
+            <p class="updatedOnTime">{{user.updatedOnTime}}</p>
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="status">
+        <th mat-header-cell *matHeaderCellDef> Status </th>
+        <td mat-cell *matCellDef="let user"> {{user.status}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef> Actions </th>
+        <td mat-cell *matCellDef="let user"> {{user.actions}} </td>
+    </ng-container>
+    
+  <tr class="titlebar" mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

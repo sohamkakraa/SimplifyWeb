@@ -1,325 +1,59 @@
 .table {
-    position: absolute;
-    height: 457px;
-    left: 82px;
-    right: 24px;
-    top: 157px;
+  position: absolute;
+  height: 50%;
+  width: 93%;
+  left: 5%;
+  right: 90%;
+  top: 18%;
 
-    /* white */
-    background: #FFFFFF;
-    border: 1px solid #EBEBEB;
-    box-sizing: border-box;
-    border-radius: 8px;
+  /* white */
+  background: #FFFFFF;
+  border: 1px solid #EBEBEB;
+  box-sizing: border-box;
+  border-radius: 8px;
 }
 
 .titlebar{
-    position: fixed;
-    height: 49px;
-    left: 82px;
-    right: 24px;
-    top: 157px;
+  background: #F3F6F9;
+  
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  /* identical to box height, or 100% */
+  align-items: center;
 
-    background: #F3F6F9;
-    border: 1px solid #EBEBEB;
-    box-sizing: border-box;
-    border-radius: 6px 6px 0px 0px;
+  color: #666666;
 }
 
-.userid {
-    position: fixed;
-    left: 7.76%;
-    right: 89.02%;
-    top: 22.92%;
-    bottom: 75.26%;
+td.mat-cell{
+  border-bottom: solid #EBEBEB;
+  height: 68px !important;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
 
-    font-family: SF Pro Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 14px;
-    /* identical to box height, or 100% */
-    display: flex;
-    align-items: center;
-
-    color: #666666;
+  color: #333333;
 }
 
-.username {
-    position: fixed;
-    left: 16.18%;
-    right: 78.99%;
-    top: 22.92%;
-    bottom: 75.26%;
-
-    font-family: SF Pro Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 14px;
-    /* identical to box height, or 100% */
-    display: flex;
-    align-items: center;
-
-    color: #666666;
+th.mat-header-cell{
+  border-bottom: solid #EBEBEB;
 }
 
-.username.up{
-    position: fixed;
-    left: 21.6%;
-    right: 78.26%;
-    top: 23%;
-    bottom: 75.78%;
-    
-    border: 0px solid #666666;
+.emailid {
+  font-size: 12px;
+  line-height: 14px;
+  color: #666666;
 }
 
-.username.down{
-    position: fixed;
-    left: 21.6%;
-    right: 78.26%;
-    top: 24.13%;
-    bottom: 75.35%;
+.updatedOnTime{
+  font-size: 12px;
+  line-height: 12px;
 
-    border: 0px solid #666666;
+  color: #666666;
 }
-
-.role {
-    position: fixed;
-    left: 35.58%;
-    right:  62.52%;
-    top: 22.92%;
-    bottom: 75.26%;
-
-    font-family: SF Pro Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 14px;
-    /* identical to box height, or 100% */
-    display: flex;
-    align-items: center;
-
-    color: #666666;
-}
-
-.role.up {
-    position: fixed;
-    left: 38.07%;
-    right: 61.79%;
-    top: 23%;
-    bottom: 75.78%;
-    
-    border: 0px solid #666666;
-}
-
-.role.down {
-    position: fixed;
-    left: 38.07%;
-    right: 61.79%;
-    top: 24.13%;
-    bottom: 75.35%;
-
-    border: 0px solid #666666;
-}
-
-.usertype {
-    position: fixed;
-    left: 45.68%;
-    right: 50%;
-    top: 22.92%;
-    bottom: 75.26%;
-
-    font-family: SF Pro Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 14px;
-    /* identical to box height, or 100% */
-    display: flex;
-    align-items: center;
-
-    color: #666666;
-}
-
-.usertype.up {
-    position: fixed;
-    left: 50.59%;
-    right: 49.27%;
-    top: 23%;
-    bottom: 75.78%;
-    
-    border: 0px solid #666666;
-}
-
-.usertype.down {
-    position: fixed;
-    left: 50.59%;
-    right: 49.27%;
-    top: 24.13%;
-    bottom: 75.35%;
-
-    border: 0px solid #666666;
-}
-
-.customers {
-    position: fixed;
-    left: 56.08%;
-    right: 38.58%;
-    top: 22.92%;
-    bottom: 75.26%;
-
-    font-family: SF Pro Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 14px;
-    /* identical to box height, or 100% */
-    display: flex;
-    align-items: center;
-
-    color: #666666;
-}
-
-.updtOn {
-    position: fixed;
-    left: 66.62%;
-    right: 28.11%;
-    top: 22.92%;
-    bottom: 75.26%;
-
-    font-family: SF Pro Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 14px;
-    /* identical to box height, or 100% */
-    display: flex;
-    align-items: center;
-
-    color: #666666;
-}
-
-.updtOn.up {
-    position: fixed;
-    left: 72.33%;
-    right: 27.53%;
-    top: 23%;
-    bottom: 75.78%;
-    
-    border: 0px solid #666666;
-}
-
-.updtOn.down {
-    position: fixed;
-    left: 72.33%;
-    right: 27.53%;
-    top: 24.13%;
-    bottom: 75.35%;
-
-    border: 0px solid #666666;
-}
-
-.status {
-    position: fixed;
-    left: 77.67%;
-    right: 19.55%;
-    top: 22.92%;
-    bottom: 75.26%;
-
-    font-family: SF Pro Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 14px;
-    /* identical to box height, or 100% */
-    display: flex;
-    align-items: center;
-
-    color: #666666;
-}
-
-.status.up {
-    position: fixed;
-    left: 80.97%;
-    right: 18.89%;
-    top: 23%;
-    bottom: 75.78%;
-    
-    border: 0px solid #666666;
-}
-
-.status.down {
-    position: fixed;
-    left: 80.97%;
-    right: 18.89%;
-    top: 24.13%;
-    bottom: 75.35%;
-
-    border: 0px solid #666666;
-}
-
-
-.actions {
-    position: fixed;
-    left: 92.02%;
-    right: 4.69%;
-    top: 22.92%;
-    bottom: 75.26%;
-
-    font-family: SF Pro Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 14px;
-    /* identical to box height, or 100% */
-    display: flex;
-    align-items: center;
-
-    color: #666666;
-}
-
-.rows{
-    background: #F3F6F9;
-    border: 1px solid #EBEBEB;
-    box-sizing: border-box;
-    border-radius: 6px 6px 0px 0px;
-}
-
-.idRow{
-
-    font-family: SF Pro Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 14px;
-    /* identical to box height, or 100% */
-    display: flex;
-    align-items: center;
-
-    color: #333333;
-}
-
-.nameRow{
-    font-family: SF Pro Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.01em;
-
-    color: #333333;
-}
-
-.nameRow.emailid{
-    font-family: SF Pro Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    /* identical to box height */
-    letter-spacing: 0.01em;
-
-    color: #666666;
-}
-
 
