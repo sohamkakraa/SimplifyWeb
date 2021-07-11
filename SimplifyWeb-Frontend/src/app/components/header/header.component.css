@@ -1,0 +1,214 @@
+.header {
+    position: absolute;
+    width: 95.5%;
+    height: 83px;
+    left: 61px;
+    top: 51px;
+
+    background: #F3F3F3;
+}
+
+.search {
+    position: absolute;
+    border: 0px solid #C2CFE0;
+    border-radius: 1px;
+    height: 30px;
+    width: 30px;
+    margin-top: 1.5%;
+    margin-left: 84%;
+}
+
+.oval{
+    position: fixed;
+    left: 84.85%;
+    right: 14.18%;
+    top: 9.38%;
+    bottom: 88.89%;
+
+    border: 0px solid #707070;
+}
+
+.handle{
+    position: fixed;
+    left: 85.68%;
+    right: 13.98%;
+    top: 10.86%;
+    bottom: 88.54%;
+    
+    border: 0px solid #707070;
+}
+
+.filter {
+    position: absolute;
+    border: 0px solid #C2CFE0;
+    border-radius: 1px;
+    height: 30px;
+    width: 30px;
+    margin-top: 1.5%;
+    margin-left: 86.2%;
+}
+
+.vfilter{
+    position: fixed;
+    left: 86.9%;
+    right: 11.8%;
+    top: 9.38%;
+    bottom: 88.54%;
+
+    border: 0px solid #707070;
+}
+
+.line{
+    position: fixed;
+    width: 22px;
+    height: 0px;
+    left: 89%;
+    top: 10.5%;
+
+    border: 1px solid #E0E0E0;
+    transform: rotate(-90deg);
+}
+
+.btn {
+    position: absolute;
+    border-radius: 1px;
+    height: 32px;
+    width: 105px;
+    margin-top: 1.5%;
+    margin-left: 91%;
+
+}
+
+.createUser {
+    border-radius: 10px;
+    background: #2E93B7;
+    left: 91.73%;
+    right: 2.93%;
+    top: 9.11%;
+    bottom: 88.28%;
+    border: 0px solid #E0E0E0;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25px;
+
+    color: #FFFFFF;
+}
+
+.heading{
+    position: fixed;
+    left: 6%;
+    right: 90.41%;
+    top: 9.24%;
+    bottom: 88.41%;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height, or 100% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25px;
+
+    color: #154454;
+}
+
+.navbar {
+    overflow: hidden;
+}
+
+.navbar a {
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    
+    color: #666666;
+}
+
+.navbar a.active-page {
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+    color: #154454;
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.all {
+    position: fixed;
+    left: 6%;
+    right: 92.61%;
+    top: 14.19%;
+    bottom: 83.72%;
+}
+
+.draft {
+    position: fixed;
+    left: 9.74%;
+    right: 87.77%;
+    top: 14.19%;
+    bottom: 83.72%;
+}
+
+.pa {
+    position: fixed;
+    left: 14.57%;
+    right: 76.79%;
+    top: 14.19%;
+    bottom: 83.72%;
+}
+
+.submitted {
+    position: fixed;
+    left: 25.55%;
+    right: 69.69%;
+    top: 14.19%;
+    bottom: 83.72%;
+}
+
+.active {
+    position: fixed;
+    left: 32.65%;
+    right: 64.28%;
+    top: 14.19%;
+    bottom: 83.72%;
+}
+
+.inactive {
+    position: fixed;
+    left: 38.07%;
+    right: 64.28%;
+    top: 14.19%;
+    bottom: 83.72%;
+}
+
+.rejected {
+    position: fixed;
+    left: 44.22%;
+    right: 64.28%;
+    top: 14.19%;
+    bottom: 83.72%;
+}
