@@ -1,0 +1,70 @@
+<div class="header">
+    <h1 class="heading">Users</h1>
+    <div class="navbar">
+        <div class="subnav">
+            <a class="all active-page" href="/">All</a>
+        </div>
+        <div class="subnav">
+            <a class="draft" href="/drafts">Draft</a>
+        </div>
+        <div class="subnav">
+            <a class="pa" href="/pa">Pending Approval</a>
+        </div>
+        <div class="subnav">
+            <a class="submitted" href="/submitted">Submitted</a>
+        </div>
+        <div class="subnav">
+            <a class="active" href="/active">Active</a>
+        </div>
+        <div class="subnav">
+            <a class="inactive" href="/inactive">Inactive</a>
+        </div>
+        <div class="subnav">
+            <a class="rejected" href="/rejected">Rejected</a>
+        </div>
+    </div>
+    <div class="search">
+        <img src="assets/Oval.svg" class="oval"> 
+        <img src="assets/Shapehandle.svg" class="handle"> 
+    </div>
+    <div class="filter">
+        <img src="assets/Vectorfilter.svg" class="vfilter"> 
+    </div>
+    <div>
+        <img src="assets/Line 643.svg" class="line"> 
+    </div>
+    <div class="btn">
+        <button class="createUser">Create User</button>
+    </div>
+</div>
+
+<div class="table">
+    <tr class="titlebar">
+        <th class="userid">User ID</th>
+        <th class="username">User Name <img src="assets/Vectorup.svg" class="username up"><img src="assets/Vectordown.svg" class="username down"></th>
+        <th class="role">Role <img src="assets/Vectorup.svg" class="role up"><img src="assets/Vectordown.svg" class="role down"></th>
+        <th class="usertype">User Type <img src="assets/Vectorup.svg" class="usertype up"><img src="assets/Vectordown.svg" class="usertype down"></th>
+        <th class="customers">#Customers</th>
+        <th class="updtOn">Updated On <img src="assets/Vectorup.svg" class="updtOn up"><img src="assets/Vectordown.svg" class="updtOn down"></th>
+        <th class="status">Status <img src="assets/Vectorup.svg" class="status up"><img src="assets/Vectordown.svg" class="status down"></th>
+        <th class="actions">Actions</th>
+    </tr>
+    <tr class="rows" *ngFor = "let user of users">
+        <th class="userid idRow">{{ user.id }}</th>
+        <th class="nameRow">
+            <p>{{ user.firstname }} {{ user.lastname }}</p>
+            <p class="nameRow emailid">{{ user.emailid }}</p>
+        </th>
+        <th class="idRow">{{ user.role }}</th>
+        <th class="idRow">{{ user.usertype }}</th>
+        <th class="idRow">{{ user.customers }}</th>
+        <th class="nameRow">
+            <p>{{ user.updatedOnDate }}</p>
+            <p class="nameRow emailid">{{ user.updatedOnTime }}</p>
+        </th>
+        <th class="idRow">{{ user.status }}</th>
+
+
+    </tr>
+
+</div>

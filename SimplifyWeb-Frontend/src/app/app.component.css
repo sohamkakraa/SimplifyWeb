@@ -1,0 +1,377 @@
+.top_bar_bg{ 
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 93.75%;
+
+    /* white */
+    background: #FFFFFF;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
+}
+
+.logo{
+    position: absolute;
+    width: 134px;
+    height: 50px;
+    left: 0px;
+    top: 1px;
+
+    background: url('/Users/sohamkakra/git/SimplifyWeb/SimplifyWeb-Frontend/src/assets/0b0ddfa13a7c4512bc33d2733515d872 1.png');
+}
+
+.settings {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    margin-top: 1%;
+    margin-left: 91%;
+
+    border: 0px solid #C2CFE0;
+    border-radius: 1px;
+}
+
+.settingso{
+    position: fixed;
+    left: 91%;
+    right: 7.83%;
+    top: 2.08%;
+    bottom: 95.83%;
+    
+    border: 0px solid #707070;
+}
+
+.settingsi {
+    position: fixed;
+    left: 91.42%;
+    right: 8.26%;
+    top: 2.84%;
+    bottom: 96.59%;
+
+    border: 0px solid #707070; 
+}
+
+.info {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    margin-top: 1%;
+    margin-left: 93%;
+
+    border: 0px solid #C2CFE0;
+    border-radius: 1px;
+}
+
+.infocircle{
+    position: fixed;
+    left: 93.05%;
+    right: 5.78%;
+    top: 2.08%;
+    bottom: 95.83%;
+    
+    border: 0px solid #707070; 
+}
+
+.infoQ {
+    position: fixed;
+    left: 93.46%;
+    right: 6.2%;
+    top: 2.6%;
+    bottom: 96.77%;
+
+    border: 0px solid #707070;
+}
+
+.infodot {
+    position: fixed;
+    left: 93.63%;
+    right: 6.37%;
+    top: 3.65%;
+    bottom: 96.35%;
+
+    border: 0px solid #707070;
+}
+
+.notify {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    margin-top: 1%;
+    margin-left: 95%;
+
+    border: 0px solid #C2CFE0;
+    border-radius: 1px;
+}
+.bellicon{
+    position: fixed;
+    left: 95.1%;
+    right: 3.85%;
+    top: 2.08%;
+    bottom: 96.35%;
+
+    border: 0px solid #707070; 
+}
+.bell {  
+    position: fixed;
+    left: 95.52%;
+    right: 4.28%;
+    top: 4.06%;
+    bottom: 95.83%;
+
+    border: 0px solid #707070;
+}
+.indicator {
+    position: fixed;
+    left: 95.61%;
+    right: 3.95%;
+    top: 1.82%;
+    bottom: 97.4%;
+    border-radius: 50%;
+    background: #2E93B7;
+}
+
+.profile {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    margin-top: 1%;
+    margin-left: 97%;
+
+    border: 0px solid #C2CFE0;
+    border-radius: 1px;
+}
+.avatar {
+    position: fixed;
+    border-radius: 50%;
+}
+
+.side_nav_bg {
+    position: absolute;
+    left: 0%;
+    right: 95.75%;
+    top: 6.25%;
+    bottom: 0%;
+
+    background: #2E93B7;
+}
+
+.dashboard {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    margin-top: 21.5%;
+    margin-left: 25.30%;
+
+    border: 0px solid #C2CFE0;
+    border-radius: 1px;
+}
+
+.dashboard:hover {
+    position: absolute;
+    border: 1px solid #C2CFE0;
+    background: #0F7BA2;
+    border-radius: 6px;
+}
+
+.a {
+    position: fixed;
+    left: 1.46%;
+    right: 98.02%;
+    top: 8.33%;
+    bottom: 90.65%;
+    
+    border: 0px solid #C2CFE0;
+    border-radius: 1px;
+}
+
+.b {
+    position: fixed;
+    left: 2.27%;
+    right: 97.22%;
+    top: 8.33%;
+    bottom: 90.65%;
+
+    border: 0px solid #C2CFE0;
+    border-radius: 1px;
+}
+.c {
+    position: fixed;
+    left: 1.46%;
+    right: 98.02%;
+    top: 9.94%;
+    bottom: 89.04%;
+
+    border: 0px solid #C2CFE0;
+    border-radius: 1px;
+}
+.d {
+    position: fixed;
+    left: 2.27%;
+    right: 97.22%;
+    top: 9.94%;
+    bottom: 89.04%;
+
+    border: 0px solid #C2CFE0;
+    border-radius: 1px;
+}
+
+.user {
+    position: absolute;
+    border: 0px solid #C2CFE0;
+    border-radius: 1px;
+    height: 30px;
+    width: 30px;
+    margin-top: 115.5%;
+    margin-left: 25.30%;
+}
+
+.user:hover {
+    position: absolute;
+    border: 1px solid #C2CFE0;
+    background: #0F7BA2;
+    border-radius: 6px;
+}
+
+.head {
+    position: fixed;
+    left: 1.72%;
+    right: 97.78%;
+    top: 15.23%;
+    bottom: 83.76%;
+
+    border: 0px solid #FFFFFF;
+}
+
+.shoulder {
+    position: fixed;
+    left: 1.46%;
+    right: 98.1%;
+    top: 16.74%;
+    bottom: 82.5%;
+    
+    border: 0px solid #FFFFFF;
+}
+
+.Osettings {
+    position: fixed;
+    left: 1.97%;
+    right: 97.22%;
+    top: 16.59%;
+    bottom: 81.8%;
+
+    border: 0px solid #FFFFFF;
+}
+
+.Isettings {
+    position: fixed;
+    left: 2.25%;
+    right: 97.51%;
+    top: 17.18%;
+    bottom: 82.38%;
+
+    border: 0px solid #FFFFFF;
+}
+
+.database {
+    position: absolute;
+    border: 0px solid #C2CFE0;
+    border-radius: 1px;
+    height: 30px;
+    width: 30px;
+    margin-top: 210.5%;
+    margin-left: 25.30%;
+}
+
+.database:hover {
+    position: absolute;
+    border: 1px solid #C2CFE0;
+    background: #0F7BA2;
+    border-radius: 6px;
+}
+
+.circle {
+    position: fixed;
+    left: 1.46%;
+    right: 97.22%;
+    top: 23.85%;
+    bottom: 75.71%;
+
+    border: 0px solid #C2CFE0;
+}
+
+.box {
+    position: fixed;
+    left: 1.46%;
+    right: 97.22%;
+    top: 22.83%;
+    bottom: 74.69%;
+
+    border: 0px solid #C2CFE0;
+}
+
+.ring {
+    position: fixed;
+    left: 1.46%;
+    right: 97.22%;
+    top: 22.4%;
+    bottom: 76.73%;
+
+    border: 0px solid #C2CFE0;
+}
+
+.friends {
+    position: absolute;
+    border: 0px solid #C2CFE0;
+    border-radius: 1px;
+    height: 30px;
+    width: 30px;
+    margin-top: 305.5%;
+    margin-left: 25.30%;
+}
+
+.friends:hover {
+    position: absolute;
+    border: 1px solid #C2CFE0;
+    background: #0F7BA2;
+    border-radius: 6px;
+}
+
+.head1 {
+    position: fixed;
+    left: 1.7%;
+    right: 97.82%;
+    top: 29.56%;
+    bottom: 69.49%;
+
+    border: 0px solid #C2CFE0;
+}
+
+.halfhead {
+    position: fixed;
+    left: 2.36%;
+    right: 97.46%;
+    top: 29.57%;
+    bottom: 69.5%;
+
+    border: 0px solid #C2CFE0;
+}
+
+.fullbody {
+    position: fixed;
+    left: 1.46%;
+    right: 97.58%;
+    top: 30.99%;
+    bottom: 68.3%;
+
+    border: 0px solid #C2CFE0;
+}
+
+.rightsh {
+    position: fixed;
+    left: 2.6%;
+    right: 97.22%;
+    top: 31%;
+    bottom: 68.3%;
+
+    border: 0px solid #C2CFE0;
+}
