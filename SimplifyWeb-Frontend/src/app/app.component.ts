@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'SimplifyWeb-Frontend';
+  displayUsers = true;
+  displayCreateUser = false;
 }

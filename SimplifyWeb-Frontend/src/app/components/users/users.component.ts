@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatTableDataSource } from '@angular/material/table';
 import { USERS } from '../../mock-users';
 import { User } from '../../User';
 
@@ -21,7 +20,7 @@ export class UsersComponent implements OnInit {
       str = "--";
     }
     return str
-}
+  }
 
   customerManager(num: number) {
     var ans;
@@ -32,7 +31,21 @@ export class UsersComponent implements OnInit {
       ans = "--";
     }
     return ans;
-}
+  }
+
+  statusManager(str: string){
+    if(str === "Active")
+      return "green";
+    else if(str === "Draft")
+      return "yellow";
+    else if(str === "Pending Approval")
+      return "orange";
+    else if(str === "Inactive")
+      return "grey";
+    else
+      return "red";
+  }
+
   ngOnInit(): void {
   }
 }
