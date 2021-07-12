@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateUserComponent implements OnInit {
 
+  usertype?: string;
   constructor() { }
 
   ngOnInit(): void {

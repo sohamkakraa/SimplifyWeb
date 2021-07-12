@@ -1,1 +1,52 @@
-<p>create-user works!</p>
+<div class="left_panel">
+    <a routerLink="/"><div class="back_btn">
+        <img src="assets/VectorBack.svg" class="back">
+        <h3 class="btn">Create User</h3>
+    </div></a>
+
+    <h2 class="heading">A few clicks <br> away from creating a user.</h2>
+    <p class="subheading">Create user in less time by <br> following simple steps...</p>
+</div>
+<div class="body">
+    <h3 class="choose">Choose the type of User</h3>
+    <section>
+        <mat-button-toggle-group [(ngModel)]="usertype" aria-lable="User Type">
+            <mat-button-toggle value="internal-user">
+                <div class="userPro">
+                    <img src="assets/Vectorface.svg" class="face">
+                    <img src="assets/VectorBody.svg" class="Body">
+                </div>
+                <h4 class="IU">Internal User</h4>
+                <p class="IU_des">Create an internal user</p>
+            </mat-button-toggle>
+            <mat-button-toggle value="client-user" class="choice2">
+                <div class="userPro">
+                    <img src="assets/Vectorface.svg" class="face">
+                    <img src="assets/VectorBody.svg" class="Body">
+                </div>
+                <h4 class="IU">Client User</h4>
+                <p class="IU_des">Create a client user</p>
+            </mat-button-toggle>
+            <mat-button-toggle value="partner-user" class="choice3">
+                <div class="userPro">
+                    <img src="assets/Vectorface.svg" class="face">
+                    <img src="assets/VectorBody.svg" class="Body">
+                </div>
+                <h4 class="IU">Partner User</h4>
+                <p class="IU_des">Create a partner user</p>
+            </mat-button-toggle>
+            <mat-button-toggle value="external-user" class="choice4">
+                <div class="userPro">
+                    <img src="assets/Vectorface.svg" class="face">
+                    <img src="assets/VectorBody.svg" class="Body">
+                </div>
+                <h4 class="IU">External User</h4>
+                <p class="IU_des">Create a external user</p>
+            </mat-button-toggle>
+        </mat-button-toggle-group>
+    </section>
+</div>
+
+<div class="footer">
+    <a routerLink="/"><button class="next">Next</button></a>
+</div>

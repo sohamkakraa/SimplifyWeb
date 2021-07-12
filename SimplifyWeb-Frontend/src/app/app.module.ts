@@ -9,6 +9,8 @@ import { UsersComponent } from './components/users/users.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CreateUserComponent } from './components/create-user/create-user.component';
 import { RouterModule, Routes } from '@angular/router';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { FormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
   { path : 'user', component: UsersComponent},
@@ -28,6 +30,8 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     MatTableModule,
     RouterModule.forRoot(appRoutes),
+    MatButtonToggleModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
