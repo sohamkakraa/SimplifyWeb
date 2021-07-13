@@ -1,0 +1,355 @@
+.heading{
+    position: absolute;
+    left: 31.19%;
+    right: 31.48%;
+    top: 15.89%;
+    bottom: 80.99%;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    /* identical to box height, or 100% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25px;
+
+    color: #154454;
+}
+
+.info {
+    position: absolute;
+    left: 31.19%;
+    right: 41.07%;
+    top: 19.79%;
+    bottom: 77.34%;
+    
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 137% */
+    display: flex;
+    align-items: center;
+    
+    color: #333333;
+}
+
+.officeAddress {
+    position: absolute;
+    left: 31.19%;
+    top: 25.78%;
+
+    /* Lables */
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25px;
+
+    color: #154454;
+}
+
+.OA {
+    position: absolute;
+    width: 584px;
+    height: 240px;
+    left: 31.19%;
+    top: 29%;
+
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.streetAddress1 {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    /* identical to box height, or 100% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25px;
+    
+    color: #666666;
+}
+
+.sa1 {
+    position: absolute;
+    width: 544px;
+    height: 30px;
+    left: 5%;
+    top: 20%;
+
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+    display: flex;
+    align-items: center;
+
+    color: #AAAAAA;
+}
+
+.streetAddress2 {
+    position: absolute;
+    left: 5%;
+    top: 40%;
+    
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    /* identical to box height, or 100% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25px;
+    
+    color: #666666;
+}
+
+.sa2 {
+    position: absolute;
+    width: 544px;
+    height: 30px;
+    left: 5%;
+    top: 50%;
+
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+    display: flex;
+    align-items: center;
+
+    color: #AAAAAA;
+}
+
+.country {
+    position: absolute;
+    left: 5%;
+    top: 70%;
+    
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    /* identical to box height, or 100% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25px;
+    
+    color: #666666;
+}
+
+.country-select {
+    position: absolute;
+    width: 118px;
+    height: 30px;
+    left: 5%;
+    top: 80%;
+
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    /* identical to box height, or 100% */
+    display: flex;
+    align-items: center;
+
+    color: #666666;
+}
+
+
+.state {
+    position: absolute;
+    left: 30%;
+    top: 70%;
+    
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    /* identical to box height, or 100% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25px;
+    
+    color: #666666;
+}
+
+.state-select {
+    position: absolute;
+    width: 118px;
+    height: 30px;
+    left: 30%;
+    top: 80%;
+
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    /* identical to box height, or 100% */
+    display: flex;
+    align-items: center;
+
+    color: #666666;
+}
+
+.city {
+    position: absolute;
+    left: 55%;
+    top: 70%;
+    
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    /* identical to box height, or 100% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25px;
+    
+    color: #666666;
+}
+
+.city-select {
+    position: absolute;
+    width: 118px;
+    height: 30px;
+    left: 55%;
+    top: 80%;
+
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    /* identical to box height, or 100% */
+    display: flex;
+    align-items: center;
+
+    color: #666666;
+}
+
+.pincodes {
+    position: absolute;
+    left: 78%;
+    top: 70%;
+    
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    /* identical to box height, or 100% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25px;
+    
+    color: #666666;
+}
+
+.pincode {
+    position: absolute;
+    width: 118px;
+    height: 30px;
+    left: 78%;
+    top: 80%;
+
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    /* identical to box height, or 100% */
+    display: flex;
+    align-items: center;
+
+    color: #666666;
+}
+
+.homeAddress {
+    position: absolute;
+    top: 60%;
+    left: 31.19%;
+  
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25px;
+
+    color: #154454;
+}
+
+.ha {
+    position: absolute;
+    width: 584px;
+    height: 240px;
+    left: 31.19%;
+    top: 64%;
+    
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+}

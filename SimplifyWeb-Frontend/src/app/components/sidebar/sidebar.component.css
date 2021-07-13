@@ -1,0 +1,139 @@
+.left_panel {
+    position: absolute;
+    width: 268px;
+    height: 93.5%;
+    left: 61px;
+    top: 52px;
+    border: 0px solid #154454;
+
+    background: #FFFFFF;
+    box-shadow: 2px 0px 25px rgba(0, 0, 0, 0.06);
+}
+
+.back_btn{
+    position: absolute;
+    left: 6.44%;
+    top: 3%;
+    right: 93.12%;
+    bottom: 87.11%;
+    height: 40px;
+    width: 140px;
+    border: 0px solid #154454;
+}
+
+.back {
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    border: 0px solid #154454;
+}
+
+.btn {
+    position: absolute;
+    left: 25%;
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height, or 100% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25px;
+
+    color: #154454;
+}
+
+.heading {
+
+    position: absolute;
+
+    left: 10%;
+    top: 10%;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    /* or 125% */
+    display: flex;
+    align-items: center;
+
+    color: #154454;
+}
+
+.subheading {
+    position: absolute;
+
+    left: 10%;
+    top: 30%;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 137% */
+    display: flex;
+    align-items: center;
+
+    color: #154454;
+}
+
+.footer {
+    position: absolute;
+    width: 79%;
+    height: 64px;
+    left: 329px;
+    top: 92%;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
+}
+
+.next{
+    position: absolute;
+    width: 75px;
+    height: 32px;
+    left: 90%;
+    top: 30%;
+
+    border: 0px solid #E0E0E0;
+    background: #EBEBEB;
+    border-radius: 10px;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    align-items: center;
+    letter-spacing: 0.25px;
+
+    color: #AAAAAA;
+}
+
+.previous {
+    position: absolute;
+    width: 88px;
+    height: 32px;
+    left: 5%;
+    top: 30%;
+    
+    border: 0px solid #E0E0E0;
+    background: #EBEBEB;
+    border-radius: 10px;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    align-items: center;
+    letter-spacing: 0.25px;
+
+    color: #AAAAAA;
+}

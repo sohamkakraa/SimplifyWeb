@@ -1,0 +1,72 @@
+<app-sidebar pageForward={{next}} pageBackward={{previous}}></app-sidebar>
+<div class="body">
+    <h2 class="heading">Personal Details</h2>
+    <p class="info">Please add the personal details of the user</p>
+
+    <p class="email">Email ID <strong style="color: red;">*</strong></p>
+    <input type="text" class="emailid" placeholder="    Enter email id" />
+
+    <p class="title">Title <strong style="color: red;">*</strong></p>
+    <mat-select class="title-select" [(ngModel)]="title">
+        <mat-select-trigger>{{title}}</mat-select-trigger>
+        <mat-option *ngFor="let title of titleList" [value]="title">{{title}}</mat-option>
+    </mat-select>
+
+    <p class="firstnames">First Name <strong style="color: red;">*</strong></p>
+    <input type="text" class="firstname" placeholder="    Enter first name" />
+
+    <p class="lastnames">Last Name <strong style="color: red;">*</strong></p>
+    <input type="text" class="lastname" placeholder="    Enter last name" />
+
+    <p class="countryP">Country <strong style="color: red;">*</strong></p>
+    <mat-select class="country-selectP" [(ngModel)]="country">
+        <mat-select-trigger>{{country}}</mat-select-trigger>
+        <mat-option *ngFor="let country of countryList" [value]="country">{{country}}</mat-option>
+    </mat-select>
+
+    <p class="numbersP">Primary Contact Number <strong style="color: red;">*</strong></p>
+    <form #f="ngForm" [formGroup]="phoneForm" class="numberP">
+    	<ngx-intl-tel-input [cssClass]="'custom'"
+			[enableAutoCountrySelect]="true" [enablePlaceholder]="false" [searchCountryFlag]="false"
+			[searchCountryField]="[SearchCountryField.Iso2, SearchCountryField.Name]" [selectFirstCountry]="false"
+			[selectedCountryISO]="CountryISO.India" [maxLength]="'15'"
+			[phoneValidation]="true" [separateDialCode]="true" [customPlaceholder]="'Enter mobile number'"
+			[numberFormat]="PhoneNumberFormat.National" name="phone" formControlName="phone">
+		</ngx-intl-tel-input>
+    </form>
+
+    <p class="countryS">Country </p>
+    <mat-select class="country-selectS" [(ngModel)]="country">
+        <mat-select-trigger>{{country}}</mat-select-trigger>
+        <mat-option *ngFor="let country of countryList" [value]="country">{{country}}</mat-option>
+    </mat-select>
+
+    <p class="numbersS">Alternate Contact Number</p>
+    <form #f="ngForm" [formGroup]="phoneForm" class="numberS">
+    	<ngx-intl-tel-input
+			[enableAutoCountrySelect]="true" [enablePlaceholder]="false" [searchCountryFlag]="false"
+			[searchCountryField]="[SearchCountryField.Iso2, SearchCountryField.Name]" [selectFirstCountry]="false"
+			[selectedCountryISO]="CountryISO.India" [maxLength]="'15'" [customPlaceholder]="'Enter mobile number'"
+			[phoneValidation]="true" [separateDialCode]="separateDialCode"
+            [numberFormat]="PhoneNumberFormat.National" name="phone" formControlName="phone">
+		</ngx-intl-tel-input>
+    </form>
+
+    <p class="landlines">Landline Number</p>
+    <input type="text" class="landline" placeholder="    Enter user's mobile number" />
+
+    <p class="designations">Designation<strong style="color: red;">*</strong></p>
+    <input type="text" class="designation" placeholder="    Enter user's designation" />
+
+    <p class="profilePics">Upload Profile Picture</p>
+    <!-- <div class="upload" ngf-drop ngf-select ng-model="files" class="drop-box" ngf-drag-over-class="'dragover'" ngf-multiple="true" ngf-allow-dir="true" accept="image/*,application/pdf" ngf-pattern="'image/*,application/pdf'">Drop pdfs or images here or click to upload</div> -->
+    <div class="upload">
+        <img src="assets/Vectorarrow.svg" class="arrow"> 
+        <img src="assets/Vectorbox.svg" class="box"> 
+        <img src="assets/Vectorup copy.svg" class="up"> 
+        <p class="droptext">Drag & Drop Picture here</p>
+        <p class="ortext">Or</p>
+        <p class="browsetext">Browse Files</p>
+
+    </div>
+</div>

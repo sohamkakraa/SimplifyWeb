@@ -10,7 +10,16 @@ import { HeaderComponent } from './components/header/header.component';
 import { CreateUserComponent } from './components/create-user/create-user.component';
 import { RouterModule, Routes } from '@angular/router';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PersonalDetailsComponent } from './components/personal-details/personal-details.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { MatSelectModule } from '@angular/material/select';
+import { NgxIntlTelInputModule } from 'ngx-intl-tel-input';
+import { AddressDetailsComponent } from './components/address-details/address-details.component';
+import { AssignRoleComponent } from './components/assign-role/assign-role.component';
+import { AssignCustomersComponent } from './components/assign-customers/assign-customers.component';
+import { SupportingDocumentsComponent } from './components/supporting-documents/supporting-documents.component';
+import { SubmittedComponent } from './components/submitted/submitted.component';
 
 const appRoutes: Routes = [
   { path : 'user', component: UsersComponent},
@@ -23,6 +32,13 @@ const appRoutes: Routes = [
     UsersComponent,
     HeaderComponent,
     CreateUserComponent,
+    PersonalDetailsComponent,
+    SidebarComponent,
+    AddressDetailsComponent,
+    AssignRoleComponent,
+    AssignCustomersComponent,
+    SupportingDocumentsComponent,
+    SubmittedComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,6 +48,10 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     MatButtonToggleModule,
     FormsModule,
+    MatSelectModule,
+    NgxIntlTelInputModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,69 @@
+<app-sidebar pageForward={{next}} pageBackward={{previous}}></app-sidebar>
+<div class="body">
+    <h2 class="heading">Address Details</h2>
+    <p class="info">Please provide user's address details</p>
+
+    <p class="officeAddress">Office Address</p>
+    <div class="OA">
+
+        <p class="streetAddress1">Street Address 1<strong style="color: red;">*</strong></p>
+        <input type="text" class="sa1" placeholder="    Enter address lane 1" />
+
+        <p class="streetAddress2">Street Address 2<strong style="color: red;">*</strong></p>
+        <input type="text" class="sa2" placeholder="    Enter address lane 2" />
+
+        <p class="country">Country <strong style="color: red;">*</strong></p>
+        <mat-select class="country-select" [(ngModel)]="country">
+            <mat-select-trigger>{{country}}</mat-select-trigger>
+            <mat-option *ngFor="let country of countryList" [value]="country">{{country}}</mat-option>
+        </mat-select>
+
+        <p *ngIf="country === 'India'" class="state">State <strong style="color: red;">*</strong></p>
+        <mat-select *ngIf="country === 'India'" class="state-select" [(ngModel)]="state">
+            <mat-select-trigger>{{state}}</mat-select-trigger>
+            <mat-option *ngFor="let state of stateList" [value]="state">{{state}}</mat-option>
+        </mat-select>
+
+        <p *ngIf="state === 'Telangana'" class="city">City <strong style="color: red;">*</strong></p>
+        <mat-select *ngIf="state === 'Telangana'" class="city-select" [(ngModel)]="city">
+            <mat-select-trigger>{{city}}</mat-select-trigger>
+            <mat-option *ngFor="let city of cityList" [value]="city">{{city}}</mat-option>
+        </mat-select>
+
+        <p class="pincodes">Pin code<strong style="color: red;">*</strong></p>
+        <input type="text" class="pincode" placeholder="    Enter pin code" />
+
+    </div>
+
+    <p class="homeAddress">Home Address</p>
+    <div class="ha">
+
+        <p class="streetAddress1">Street Address 1<strong style="color: red;">*</strong></p>
+        <input type="text" class="sa1" placeholder="    Enter address lane 1" />
+
+        <p class="streetAddress2">Street Address 2<strong style="color: red;">*</strong></p>
+        <input type="text" class="sa2" placeholder="    Enter address lane 2" />
+
+        <p class="country">Country <strong style="color: red;">*</strong></p>
+        <mat-select class="country-select" [(ngModel)]="country">
+            <mat-select-trigger>{{country}}</mat-select-trigger>
+            <mat-option *ngFor="let country of countryList" [value]="country">{{country}}</mat-option>
+        </mat-select>
+
+        <p *ngIf="country === 'India'" class="state">State <strong style="color: red;">*</strong></p>
+        <mat-select *ngIf="country === 'India'" class="state-select" [(ngModel)]="state">
+            <mat-select-trigger>{{state}}</mat-select-trigger>
+            <mat-option *ngFor="let state of stateList" [value]="state">{{state}}</mat-option>
+        </mat-select>
+
+        <p *ngIf="state === 'Telangana'" class="city">City <strong style="color: red;">*</strong></p>
+        <mat-select *ngIf="state === 'Telangana'" class="city-select" [(ngModel)]="city">
+            <mat-select-trigger>{{city}}</mat-select-trigger>
+            <mat-option *ngFor="let city of cityList" [value]="city">{{city}}</mat-option>
+        </mat-select>
+
+        <p class="pincodes">Pin code<strong style="color: red;">*</strong></p>
+        <input type="text" class="pincode" placeholder="    Enter pin code" />
+
+    </div>
+</div>
