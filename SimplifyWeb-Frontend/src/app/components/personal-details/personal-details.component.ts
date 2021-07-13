@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { SearchCountryField, CountryISO, PhoneNumberFormat } from 'ngx-intl-tel-input';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-personal-details',
@@ -23,12 +24,14 @@ export class PersonalDetailsComponent implements OnInit {
 		phone: new FormControl(undefined, [Validators.required])
 	});
 
-  constructor() { }
+  public href: string = "";
 
-  ngOnInit(): void {
+  constructor(private router: Router) {}
+
+  ngOnInit() {
+    this.href = this.router.url;
   }
 
-  next: string = "address-details";
-  previous: string = "create-user";
-
+  @Input() next: string = "address-details";
+  @Input() previous: string = "create-user";
 }

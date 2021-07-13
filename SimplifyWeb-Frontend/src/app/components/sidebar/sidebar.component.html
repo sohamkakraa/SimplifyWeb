@@ -3,8 +3,110 @@
         <img src="assets/VectorBack.svg" class="back">
         <h3 class="btn">Create User</h3>
     </div></a>
+
+    <div class="list">
+
+        <div class="ut">
+            <div>
+                <div class="round"><input type="checkbox" disabled="true" id="checkbox" checked="true"/> <label class="onPage" for="checkbox"></label></div>
+                <label class="text">User Type</label>
+            </div>
+        </div>
+
+        <div class="pd">
+            <div *ngIf="href === '/personal-details'">
+                <div class="round"><input type="checkbox" disabled="true" id="checkbox"/> <label class="onPage">2</label></div>
+                <label class="text onpage">Personal Details</label>
+                <img src="assets/VectorBack.svg" class="this">
+            </div>
+
+            <div *ngIf="href === '/address-details' || href === '/assign-role' ||  href === '/assign-customers' ||  href === '/supporting-documents' || href === '/submitted'">
+                <div class="round"><input type="checkbox" disabled="true" id="checkbox" checked="true"/> <label class="onPage" for="checkbox"></label></div>
+                <label class="text">Personal Details</label>
+            </div> 
+
+            <div *ngIf="href != '/personal-details' && href != '/address-details' && href != '/assign-role' &&  href != '/assign-customers' &&  href != '/supporting-documents' && href != '/submitted'">
+                <div class="round"><input type="checkbox" disabled="true" id="checkbox"/> <label class="beforePage">2</label></div>
+                <label class="text">Personal Details</label>
+            </div>
+        </div>
+
+        <div class="ad">
+            <div *ngIf="href === '/address-details'">
+                <div class="round"><input type="checkbox" disabled="true" id="checkbox"/> <label class="onPage">3</label></div>
+                <label class="text onpage">Address Details</label>
+                <img src="assets/VectorBack.svg" class="this">
+            </div>
+
+            <div *ngIf="href === '/assign-role' ||  href === '/assign-customers' ||  href === '/supporting-documents' || href === '/submitted'">
+                <div class="round"><input type="checkbox" disabled="true" id="checkbox" checked="true"/> <label class="onPage" for="checkbox"></label></div>
+                <label class="text">Address Details</label>
+            </div> 
+
+            <div *ngIf="href != '/address-details' && href != '/assign-role' &&  href != '/assign-customers' &&  href != '/supporting-documents' && href != '/submitted'">
+                <div class="round"><input type="checkbox" disabled="true" id="checkbox"/> <label class="beforePage">3</label></div>
+                <label class="text">Address Details</label>
+            </div>
+        </div>
+
+        <div class="ar">
+            <div *ngIf="href === '/assign-role'">
+                <div class="round"><input type="checkbox" disabled="true" id="checkbox"/> <label class="onPage">4</label></div>
+                <label class="text onpage">Assign Role</label>
+                <img src="assets/VectorBack.svg" class="this">
+            </div>
+
+            <div *ngIf="href === '/assign-customers' ||  href === '/supporting-documents' || href === '/submitted'">
+                <div class="round"><input type="checkbox" disabled="true" id="checkbox" checked="true"/> <label class="onPage" for="checkbox"></label></div>
+                <label class="text">Assign Role</label>
+            </div> 
+
+            <div *ngIf="href != '/assign-role' &&  href != '/assign-customers' &&  href != '/supporting-documents' && href != '/submitted'">
+                <div class="round"><input type="checkbox" disabled="true" id="checkbox"/> <label class="beforePage">4</label></div>
+                <label class="text">Assign Role</label>
+            </div>
+        </div>
+
+        <div class="ac">
+            <div *ngIf="href === '/assign-customers'">
+                <div class="round"><input type="checkbox" disabled="true" id="checkbox"/> <label class="onPage">5</label></div>
+                <label class="text onpage">Assign Customers</label>
+                <img src="assets/VectorBack.svg" class="this">
+            </div>
+
+            <div *ngIf="href === '/supporting-documents' || href === '/submitted'">
+                <div class="round"><input type="checkbox" disabled="true" id="checkbox" checked="true"/> <label class="onPage" for="checkbox"></label></div>
+                <label class="text">Assign Customers</label>
+            </div> 
+
+            <div *ngIf="href != '/assign-customers' &&  href != '/supporting-documents' && href != '/submitted'">
+                <div class="round"><input type="checkbox" disabled="true" id="checkbox"/> <label class="beforePage">5</label></div>
+                <label class="text">Assign Customers</label>
+            </div>
+        </div>
+
+        <div class="sd">
+            <div *ngIf="href === '/supporting-documents'">
+                <div class="round"><input type="checkbox" disabled="true" id="checkbox"/> <label class="onPage">6</label></div>
+                <label class="text onpage">Supporting Documents</label>
+                <img src="assets/VectorBack.svg" class="this">
+            </div>
+
+            <div *ngIf="href === '/submitted'">
+                <div class="round"><input type="checkbox" disabled="true" id="checkbox" checked="true"/> <label class="onPage" for="checkbox"></label></div>
+                <label class="text">Supporting Documents</label>
+            </div> 
+
+            <div *ngIf="href != '/supporting-documents' && href != '/submitted'">
+                <div class="round"><input type="checkbox" disabled="true" id="checkbox"/> <label class="beforePage">6</label></div>
+                <label class="text">Supporting Documents</label>
+            </div>
+        </div>
+    </div>
+
 </div>
-<div class="footer">
+
+<div class="footer" *ngIf="href === '/address-details' || href === '/assign-role' ||  href === '/assign-customers' ||  href === '/supporting-documents'" >
     <a [routerLink]="['/', pageForward]"><button class="next">Next</button></a>
     <a [routerLink]="['/', pageBackward]"><button class="previous">Previous</button></a>
 </div>

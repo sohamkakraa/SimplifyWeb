@@ -81,15 +81,16 @@
     top: 30%;
     
     /* white */
-    background: #FFFFFF;
+    background: #F3F6F9;
     border: 1px solid #EBEBEB;
-    box-sizing: border-box;
     border-radius: 8px;
 }
 
 .titlebar{
+    height: 49px;
     background: #F3F6F9;
-    
+    border: 0px solid #EBEBEB;
+
     font-family: SF Pro Display;
     font-style: normal;
     font-weight: normal;
@@ -99,4 +100,25 @@
     align-items: center;
   
     color: #666666;
-  }
+}
+
+.rows {
+    height: 49px;
+    background: #FFFFFF;
+    border: 0px solid;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    /* identical to box height, or 100% */
+    /* display: flex; */
+    align-items: center;
+
+    color: #333333;
+}
+
+.checkbox {
+    border-radius: 100%;
+}

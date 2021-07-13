@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-submitted',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SubmittedComponent implements OnInit {
 
-  constructor() { }
+  
+  public href: string = "";
 
-  ngOnInit(): void {
+  constructor(private router: Router) {}
+
+  ngOnInit() {
+    this.href = this.router.url;
   }
+
 
 }

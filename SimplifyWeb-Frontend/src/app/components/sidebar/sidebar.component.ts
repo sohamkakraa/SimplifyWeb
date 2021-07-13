@@ -12,6 +12,7 @@ export class SidebarComponent implements OnInit {
 
   @Input() pageForward?: string;
   @Input() pageBackward?: string;
+  @Input() href?: string;
 
   ngOnInit(): void {
   }

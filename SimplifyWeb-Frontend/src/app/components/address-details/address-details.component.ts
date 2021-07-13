@@ -1,4 +1,5 @@
 import { Component, OnInit, Input} from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-address-details',
@@ -19,9 +20,12 @@ export class AddressDetailsComponent implements OnInit {
   city?: string = 'Select';
   cityList: string[] = ['Hyderabad', 'Vishakapatnam', ];
 
-  constructor() { }
+  public href: string = "";
 
-  ngOnInit(): void {
+  constructor(private router: Router) {}
+
+  ngOnInit() {
+    this.href = this.router.url;
   }
 
 }

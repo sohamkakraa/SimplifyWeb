@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Role } from 'src/app/Role';
 import { ROLES } from 'src/app/mock-roles';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-assign-role',
@@ -9,15 +10,16 @@ import { ROLES } from 'src/app/mock-roles';
 })
 export class AssignRoleComponent implements OnInit {
   roles: Role[] = ROLES;
-  displayedColumns: string[] = ['id', 'name', 'type'];
-  dataSource = this.roles;
-
-  constructor() { }
 
   @Input() next: string = "assign-customers";
   @Input() previous: string = "address-details";
 
-  ngOnInit(): void {
-  }
+  public href: string = "";
+
+  constructor(private router: Router) {}
+
+    ngOnInit() {
+        this.href = this.router.url;
+    }
 
 }

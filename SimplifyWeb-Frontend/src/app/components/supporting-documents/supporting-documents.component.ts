@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-supporting-documents',
@@ -10,9 +11,12 @@ export class SupportingDocumentsComponent implements OnInit {
   @Input() next: string = "submitted";
   @Input() previous: string = "assign-customers";
 
-  constructor() { }
+  public href: string = "";
 
-  ngOnInit(): void {
-  }
+  constructor(private router: Router) {}
+
+    ngOnInit() {
+        this.href = this.router.url;
+    }
 
 }
