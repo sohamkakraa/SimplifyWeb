@@ -4,11 +4,11 @@ import { SearchCountryField, CountryISO, PhoneNumberFormat } from 'ngx-intl-tel-
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-personal-details',
-  templateUrl: './personal-details.component.html',
-  styleUrls: ['./personal-details.component.css']
+  selector: 'app-review-pd',
+  templateUrl: './review-pd.component.html',
+  styleUrls: ['./review-pd.component.css']
 })
-export class PersonalDetailsComponent implements OnInit {
+export class ReviewPdComponent implements OnInit {
 
   title: string = 'Mr.';
   titleList: string[] = ['Mr.', 'Miss.'];
@@ -29,6 +29,7 @@ export class PersonalDetailsComponent implements OnInit {
     this.href = this.router.url;
   }
 
-  @Input() next: string = "address-details";
-  @Input() previous: string = "user-type";
+  @Input() next: string = "review-ad";
+  @Input() previous: string = "users";
+
 }

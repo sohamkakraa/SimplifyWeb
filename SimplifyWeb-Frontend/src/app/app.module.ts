@@ -7,8 +7,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UsersComponent } from './components/users/users.component';
 import { HeaderComponent } from './components/header/header.component';
-import { CreateUserComponent } from './components/create-user/create-user.component';
-import { RouterModule, Routes } from '@angular/router';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PersonalDetailsComponent } from './components/personal-details/personal-details.component';
@@ -20,18 +18,18 @@ import { AssignRoleComponent } from './components/assign-role/assign-role.compon
 import { AssignCustomersComponent } from './components/assign-customers/assign-customers.component';
 import { SupportingDocumentsComponent } from './components/supporting-documents/supporting-documents.component';
 import { SubmittedComponent } from './components/submitted/submitted.component';
-
-const appRoutes: Routes = [
-  { path : 'user', component: UsersComponent},
-  { path : 'create-user', component: CreateUserComponent},
-];
+import { UserTypeComponent } from './components/user-type/user-type.component';
+import { ReviewPdComponent } from './components/review-pd/review-pd.component';
+import { ReviewAdComponent } from './components/review-ad/review-ad.component';
+import { ReviewArComponent } from './components/review-ar/review-ar.component';
+import { ReviewAcComponent } from './components/review-ac/review-ac.component';
+import { ReviewSdComponent } from './components/review-sd/review-sd.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
     HeaderComponent,
-    CreateUserComponent,
     PersonalDetailsComponent,
     SidebarComponent,
     AddressDetailsComponent,
@@ -39,13 +37,18 @@ const appRoutes: Routes = [
     AssignCustomersComponent,
     SupportingDocumentsComponent,
     SubmittedComponent,
+    UserTypeComponent,
+    ReviewPdComponent,
+    ReviewAdComponent,
+    ReviewArComponent,
+    ReviewAcComponent,
+    ReviewSdComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatTableModule,
-    RouterModule.forRoot(appRoutes),
     MatButtonToggleModule,
     FormsModule,
     MatSelectModule,

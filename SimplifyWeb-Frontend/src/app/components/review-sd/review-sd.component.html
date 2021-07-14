@@ -1,0 +1,32 @@
+<app-sidebar pageForward={{next}} pageBackward={{previous}} href={{href}}></app-sidebar>
+<div class="body">
+    <h2 class="heading">Supporting Documents</h2>
+    <p class="info">If you have any supporting documents attach here.</p>
+
+    <p class="document">Upload Document</p>
+    <!-- <div class="upload" ngf-drop ngf-select ng-model="files" class="drop-box" ngf-drag-over-class="'dragover'" ngf-multiple="true" ngf-allow-dir="true" accept="image/*,application/pdf" ngf-pattern="'image/*,application/pdf'">Drop pdfs or images here or click to upload</div> -->
+    <div class="upload">
+        <img src="assets/Vectorarrow.svg" class="arrow"> 
+        <img src="assets/Vectorbox.svg" class="box"> 
+        <img src="assets/Vectorup copy.svg" class="up"> 
+        <p class="droptext">Drag & Drop Document here</p>
+        <p class="ortext">Or</p>
+        <p class="browsetext">Browse Files</p>
+
+    </div>
+
+    <p class="uplodedDocument">Uploaded Documents</p>
+    <table class="uplodedDocuments">
+        <tr class="sub">
+            <th>Document Name</th>
+            <th>Type</th>
+            <th>Action</th>
+        </tr>
+        <tr class="rows">
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+</div>

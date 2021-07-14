@@ -15,8 +15,8 @@ export class SupportingDocumentsComponent implements OnInit {
 
   constructor(private router: Router) {}
 
-    ngOnInit() {
-        this.href = this.router.url;
-    }
+  ngOnInit() {
+    this.href = this.router.url;
+  }
 
 }

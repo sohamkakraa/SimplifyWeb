@@ -48,10 +48,12 @@
     <ng-container matColumnDef="actions">
         <th mat-header-cell *matHeaderCellDef> Actions </th>
         <td mat-cell *matCellDef="let user"> 
-            <div class="edit">
-                <img src="assets/VectorNote.svg" class="note"> 
-                <img src="assets/VectorPen.svg" class="pen"> 
-            </div>
+            <a routerLink="/review-pd">
+                <div class="edit">
+                    <img src="assets/VectorNote.svg" class="note"> 
+                    <img src="assets/VectorPen.svg" class="pen"> 
+                </div>
+            </a>
             <div class="undo">
                 <img src="assets/VectorClock.svg" class="clock"> 
                 <img src="assets/VectorSPen.svg" class="spen"> 

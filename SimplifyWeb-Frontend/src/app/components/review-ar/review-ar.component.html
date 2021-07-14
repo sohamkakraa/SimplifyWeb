@@ -1,0 +1,30 @@
+<app-sidebar pageForward={{next}} pageBackward={{previous}} href={{href}}></app-sidebar>
+<div class="body">
+    <h2 class="heading">Assign Role</h2>
+    <p class="info">Select a suitable role for the user</p>
+
+    <div class="searchbar">
+        <img src="assets/Oval.svg" class="oval"> 
+        <img src="assets/Shapehandle.svg" class="handle"> 
+        <input class="search" type="text" placeholder="Search role here">
+    </div>
+
+    <table class="table">
+
+        <tr class="titlebar">
+            <th>Role ID</th>
+            <th>Role Name</th>
+            <th>Role Type</th>
+        </tr>
+
+        <tr class="rows" *ngFor="let role of roles">
+            <td>
+                <input type="radio" name="radAnswer">
+                {{role.id}}
+            </td>
+            <td>{{role.name}}</td>
+            <td>{{role.type}}</td>
+        </tr>
+
+    </table>
+</div>

@@ -1,0 +1,30 @@
+<app-sidebar pageForward={{next}} pageBackward={{previous}} href={{href}}></app-sidebar>
+<div class="body">
+    <h2 class="heading">Assign Customers</h2>
+    <p class="info">Select customers that you want to assign to user.</p>
+    <div class="searchbar">
+        <img src="assets/Oval.svg" class="oval"> 
+        <img src="assets/Shapehandle.svg" class="handle"> 
+        <input class="search" type="text" placeholder="Search customer here">
+    </div>
+   
+    <table class="table">
+
+        <tr class="titlebar">
+            <th>Company Name</th>
+            <th>Segment</th>
+            <th>Industry</th>
+        </tr>
+
+        <tr class="rows" *ngFor="let customer of customers">
+            <td class="cname">
+                <input type="checkbox">
+                <p class="name">{{customer.name}}</p>
+                <p class="email">{{customer.emailid}}</p>
+            </td>
+            <td>{{customer.segment}}</td>
+            <td>{{customer.industry}}</td>
+        </tr>
+
+    </table>
+</div>

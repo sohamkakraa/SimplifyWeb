@@ -1,14 +1,14 @@
-import { Component, OnInit, Input} from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Country, State, City } from 'country-state-city';
-import { ICountry, IState, ICity } from 'country-state-city/dist/lib/interface';
+import { City, Country, State } from 'country-state-city';
+import { ICity, ICountry, IState } from 'country-state-city/dist/lib/interface';
 
 @Component({
-  selector: 'app-address-details',
-  templateUrl: './address-details.component.html',
-  styleUrls: ['./address-details.component.css']
+  selector: 'app-review-ad',
+  templateUrl: './review-ad.component.html',
+  styleUrls: ['./review-ad.component.css']
 })
-export class AddressDetailsComponent implements OnInit {
+export class ReviewAdComponent implements OnInit {
 
   @Input() next: string = "assign-role";
   @Input() previous: string = "personal-details";
