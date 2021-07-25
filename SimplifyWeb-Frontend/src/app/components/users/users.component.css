@@ -1,47 +1,44 @@
 .table {
   position: absolute;
-  height: 50%;
   width: 93%;
   left: 5%;
   right: 90%;
-  top: 18%;
+  top: 20%;
 
   /* white */
   background: #FFFFFF;
   border: 1px solid #EBEBEB;
   box-sizing: border-box;
-  border-radius: 8px;
+  border-radius: 6px;
+
 }
 
 .titlebar{
-  background: #F3F6F9;
-  
-  font-family: SF Pro Display;
+  height: 30px;
+
+  background: rgba(235, 235, 235, 0.4);
+  border: 1px solid #EBEBEB;
+  box-sizing: border-box;
+  border-radius: 6px 6px 0px 0px;
+
+  font-family: Nunito Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 14px;
-  /* identical to box height, or 100% */
-  align-items: center;
+  /* identical to box height, or 117% */
 
   color: #666666;
 }
 
-td.mat-cell{
-  border-bottom: solid #EBEBEB;
-  height: 68px !important;
-  font-family: SF Pro Display;
+.user{
+  height: 60px;
+  font-family: Nunito Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.01em;
-
-  color: #333333;
-}
-
-th.mat-header-cell{
-  border-bottom: solid #EBEBEB;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height, or 117% */
 }
 
 .emailid {
@@ -73,7 +70,12 @@ th.mat-header-cell{
 
 .childWrapper > li {
   float: left;
-  padding: 10px;
+  padding-top: 5%;
+  padding-left: 5%;
+}
+
+.childWrapper > li.colorbox{
+  padding-top: 6.5%;
 }
 
 .edit {

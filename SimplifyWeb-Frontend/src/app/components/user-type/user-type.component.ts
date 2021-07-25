@@ -9,8 +9,9 @@ export class UserTypeComponent implements OnInit {
   
   usertype?: string;
   constructor() { }
-
+  
   ngOnInit(): void {
+    console.log(this.usertype);
   }
 
 }

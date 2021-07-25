@@ -31,7 +31,7 @@
 .btn {
     position: absolute;
     left: 25%;
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -51,7 +51,7 @@
     left: 10%;
     top: 10%;
 
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
@@ -69,7 +69,7 @@
     left: 10%;
     top: 30%;
 
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -88,7 +88,7 @@
     top: 15.89%;
     bottom: 80.99%;
 
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -158,7 +158,7 @@
     left: -350%;
     top: 10px;
 
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -176,7 +176,7 @@
     left: -350%;
     top: 30px;
     
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -246,7 +246,7 @@
     background: #EBEBEB;
     border-radius: 10px;
 
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;

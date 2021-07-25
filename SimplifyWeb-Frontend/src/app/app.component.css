@@ -6,8 +6,8 @@
     bottom: 93.75%;
 
     /* white */
-    background: #FFFFFF;
-    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
+    background: linear-gradient(270deg, #014A77 0%, #026597 35.21%, #0783B6 100%);
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
 }
 
 .logo{
@@ -144,7 +144,7 @@
     top: 6.25%;
     bottom: 0%;
 
-    background: #2E93B7;
+    background: #333333;
 }
 
 .dashboard {

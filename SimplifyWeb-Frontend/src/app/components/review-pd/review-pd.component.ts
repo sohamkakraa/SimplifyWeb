@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { SearchCountryField, CountryISO, PhoneNumberFormat } from 'ngx-intl-tel-input';
 import { Router } from '@angular/router';
+import { User } from 'src/app/User';
 
 @Component({
   selector: 'app-review-pd',
@@ -9,6 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./review-pd.component.css']
 })
 export class ReviewPdComponent implements OnInit {
+  @Input() user?: User;
 
   title: string = 'Mr.';
   titleList: string[] = ['Mr.', 'Miss.'];
@@ -27,6 +29,7 @@ export class ReviewPdComponent implements OnInit {
 
   ngOnInit() {
     this.href = this.router.url;
+    console.log(this.user);
   }
 
   @Input() next: string = "review-ad";

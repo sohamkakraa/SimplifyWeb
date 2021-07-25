@@ -10,7 +10,7 @@ import { User } from '../../User';
 
 export class UsersComponent implements OnInit {
   users: User[] = USERS;
-  displayedColumns: string[] = ['id', 'username', 'role', 'usertype', 'customers', 'updatedOn', 'status', 'actions'];
+  displayedColumns: string[] = ['username', 'role', 'usertype', 'customers', 'updatedOn', 'status', 'actions'];
   dataSource = this.users;
   
   constructor() { }
