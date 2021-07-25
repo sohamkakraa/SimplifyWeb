@@ -1,5 +1,6 @@
 export interface User {
     id: string;
+    profile?: String;
     firstname: string;
     lastname: string;
     emailid: string;

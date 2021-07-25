@@ -81,7 +81,7 @@
     </tr>
 
     <tr class="user" *ngFor="let user of users">
-        <td>{{user.firstname}} {{user.lastname}}</td>
+        <td><img class="profile" [src]="user.profile" /> {{user.firstname}} {{user.lastname}}</td>
         <td>{{user.usertype}}</td>
         <td>{{roleManager(user.role)}}</td>
         <td>{{customerManager(user.customers)}}</td>

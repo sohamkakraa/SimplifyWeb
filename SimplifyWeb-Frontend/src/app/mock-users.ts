@@ -3,6 +3,7 @@ import { User } from "./User"
 export const USERS: User[] = [
     {
         id: "IU1685",
+        profile: "assets/image.png",
         firstname: "Lindsey",
         lastname: "Stroud",
         emailid: "lindsey.stroud@gmail.com",
@@ -15,6 +16,7 @@ export const USERS: User[] = [
     },
     {
         id: "IU1234",
+        profile: "assets/image 2.png",
         firstname: "Nicci",
         lastname: "Troiani",
         emailid: "nicci.troiani@gmail.com",
@@ -27,6 +29,7 @@ export const USERS: User[] = [
     },
     {
         id: "IU2456",
+        profile: "assets/image 3.png",
         firstname: "Geroge",
         lastname: "Fields",
         emailid: "geroge.fields@gmail.com",
