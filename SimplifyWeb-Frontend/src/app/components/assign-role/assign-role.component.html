@@ -6,23 +6,21 @@
     <div class="searchbar">
         <img src="assets/Oval.svg" class="oval"> 
         <img src="assets/Shapehandle.svg" class="handle"> 
-        <input class="search" type="text" placeholder="Search role here">
+        <input class="search" type="text" placeholder="Search role here" [(ngModel)]="searchedKeyword">
     </div>
 
     <table class="table">
 
         <tr class="titlebar">
-            <th>Role ID</th>
             <th>Role Name</th>
             <th>Role Type</th>
         </tr>
 
-        <tr class="rows" *ngFor="let role of roles">
+        <tr class="rows" *ngFor="let role of roles | filter:searchedKeyword">
             <td>
                 <input type="radio" name="radAnswer">
-                {{role.id}}
+                {{role.name}}
             </td>
-            <td>{{role.name}}</td>
             <td>{{role.type}}</td>
         </tr>
 

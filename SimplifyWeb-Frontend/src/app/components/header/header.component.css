@@ -142,7 +142,7 @@
     /* identical to box height, or 100% */
     display: flex;
     align-items: center;
-    text-decoration: underline 2px;
+    text-decoration: underline 10px;
     color: #154454;
 }
 
@@ -155,7 +155,7 @@
     position: fixed;
     left: 6%;
     right: 92.61%;
-    top: 14.19%;
+    top: 13%;
     bottom: 83.72%;
 }
 
@@ -163,14 +163,14 @@
     position: fixed;
     left: 9.74%;
     right: 87.77%;
-    top: 14.19%;
+    top: 13%;
     bottom: 83.72%;
 }
 
 .pa {
     position: fixed;
     left: 14.57%;
-    top: 14.19%;
+    top: 13%;
     bottom: 83.72%;
 }
 
@@ -178,7 +178,7 @@
     position: fixed;
     left: 25.55%;
     right: 69.69%;
-    top: 14.19%;
+    top: 13%;
     bottom: 83.72%;
 }
 
@@ -186,7 +186,7 @@
     position: fixed;
     left: 32.65%;
     right: 64.28%;
-    top: 14.19%;
+    top: 13%;
     bottom: 83.72%;
 }
 
@@ -194,7 +194,7 @@
     position: fixed;
     left: 38.07%;
     right: 64.28%;
-    top: 14.19%;
+    top: 13%;
     bottom: 83.72%;
 }
 
@@ -202,6 +202,6 @@
     position: fixed;
     left: 44.22%;
     right: 64.28%;
-    top: 14.19%;
+    top: 13%;
     bottom: 83.72%;
 }

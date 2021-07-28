@@ -14,6 +14,8 @@ export class AssignRoleComponent implements OnInit {
   @Input() next: string = "assign-customers";
   @Input() previous: string = "address-details";
 
+  searchedKeyword!: string;
+
   public href: string = "";
 
   constructor(private router: Router) {}

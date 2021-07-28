@@ -24,6 +24,8 @@ import { ReviewAdComponent } from './components/review-ad/review-ad.component';
 import { ReviewArComponent } from './components/review-ar/review-ar.component';
 import { ReviewAcComponent } from './components/review-ac/review-ac.component';
 import { ReviewSdComponent } from './components/review-sd/review-sd.component';
+import { SortDirective } from './directive/sort.directive';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,7 @@ import { ReviewSdComponent } from './components/review-sd/review-sd.component';
     ReviewArComponent,
     ReviewAcComponent,
     ReviewSdComponent,
+    SortDirective,
   ],
   imports: [
     BrowserModule,
@@ -55,6 +58,7 @@ import { ReviewSdComponent } from './components/review-sd/review-sd.component';
     NgxIntlTelInputModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    Ng2SearchPipeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

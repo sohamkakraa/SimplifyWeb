@@ -22,4 +22,6 @@ export class AssignCustomersComponent implements OnInit {
   ngOnInit() {
     this.href = this.router.url;
   }
+
+  searchedKeyword!: string;
 }

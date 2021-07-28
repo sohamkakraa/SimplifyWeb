@@ -69,16 +69,17 @@
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table> -->
 <table class="table">
-
-    <tr class="titlebar">
-        <th>User Name</th>
-        <th>User Type</th>
-        <th>Role</th>
-        <th>#Customers</th>
-        <th>Updated On</th>
-        <th>Status</th>
-        <th>Actions</th>
-    </tr>
+    <thead>
+        <tr class="titlebar">
+            <th [appSort]="users" data-order="desc" data-name="firstname" scope="col">User Name <img class="up" src="assets/Vector.png"></th>
+            <th [appSort]="users" data-order="desc" data-name="usertype" scope="col">User Type <img class="up" src="assets/Vector.png"></th>
+            <th [appSort]="users" data-order="desc" data-name="role" scope="col">Role <img class="up" src="assets/Vector.png"></th>
+            <th scope="col">#Customers</th>
+            <th [appSort]="users" data-order="desc" data-name="updatedOnDate" scope="col">Updated On <img class="up" src="assets/Vector.png"></th>
+            <th [appSort]="users" data-order="desc" data-name="status" scope="col">Status <img class="up" src="assets/Vector.png"></th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
 
     <tr class="user" *ngFor="let user of users">
         <td><img class="profile" [src]="user.profile" /> {{user.firstname}} {{user.lastname}}</td>

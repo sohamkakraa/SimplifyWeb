@@ -1,11 +1,23 @@
+.body{
+    position: absolute;
+    bottom: 8%;
+    left: 4.25%;
+    top: 20%;
+    right: 0%;
+
+    overflow-y: scroll;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
 .heading{
     position: absolute;
     left: 31.19%;
-    right: 31.48%;
-    top: 15.89%;
-    bottom: 80.99%;
+    top: 5%;
 
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -21,11 +33,9 @@
 .info {
     position: absolute;
     left: 31.19%;
-    right: 41.07%;
-    top: 19.79%;
-    bottom: 77.34%;
+    top: 10%;
     
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -41,8 +51,8 @@
     position: absolute;
     width: 584px;
     height: 30px;
-    left: 31.49%;
-    top: 25%;
+    left: 31.19%;
+    top: 20%;
 
     background: #FFFFFF;
     border: 1px solid #EBEBEB;
@@ -77,8 +87,8 @@
 .table {
     position: absolute;
     width: 584px;
-    left: 31.49%;
-    top: 30%;
+    left: 31.19%;
+    top: 26%;
     
     /* white */
     background: #F3F6F9;
@@ -87,14 +97,14 @@
 }
 
 .titlebar{
-    height: 49px;
+    height: 30px;
     background: #F3F6F9;
     border: 0px solid #EBEBEB;
 
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 14px;
     /* identical to box height, or 100% */
     align-items: center;
@@ -103,15 +113,15 @@
 }
 
 .rows {
-    height: 49px;
+    height: 60px;
     background: #FFFFFF;
     border: 0px solid;
 
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 14px;
+    line-height: 18px;
     /* identical to box height, or 100% */
     /* display: flex; */
     align-items: center;
@@ -124,25 +134,21 @@
     width: 20px;
 }
 
-.name {
-    font-family: SF Pro Display;
+.cname {
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.01em;
-    
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+    align-items: center;
+
     color: #333333;
 }
 
-.email {
-    font-family: SF Pro Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    /* identical to box height */
-    letter-spacing: 0.01em;
-    
-    color: #666666;
+.profile{
+    border: 0px solid;
+    border-radius: 0%;
+    padding-left: 3%;
+    padding-right: 3%;
 }

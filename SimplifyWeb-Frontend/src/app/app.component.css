@@ -1,9 +1,11 @@
+
 .top_bar_bg{ 
     position: absolute;
     left: 0%;
     right: 0%;
     top: 0%;
     bottom: 93.75%;
+    overflow-x: hidden;
 
     /* white */
     background: linear-gradient(270deg, #014A77 0%, #026597 35.21%, #0783B6 100%);

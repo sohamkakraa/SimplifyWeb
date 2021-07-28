@@ -1,4 +1,4 @@
-<div class="left_panel">
+<!-- <div class="left_panel">
     <a routerLink="/"><div class="back_btn">
         <img src="assets/VectorBack.svg" class="back">
         <h3 class="btn">Create User</h3>
@@ -6,12 +6,16 @@
 
     <h2 class="heading">A few clicks <br> away from creating a user.</h2>
     <p class="subheading">Create user in less time by <br> following simple steps...</p>
-</div>
+</div> -->
+<app-sidebar pageForward={{next}} href={{href}}></app-sidebar>
+
 <div class="body">
     <h3 class="choose">Choose the type of User</h3>
+    <p class="info">Create user in less time by following simple steps...</p>
+
     <section>
         <mat-button-toggle-group [(ngModel)]="usertype" aria-lable="User Type">
-            <mat-button-toggle value="internal-user">
+            <mat-button-toggle value="internal-user" class="choice1">
                 <div class="userPro">
                     <img src="assets/Vectorface.svg" class="face">
                     <img src="assets/VectorBody.svg" class="Body">
@@ -45,8 +49,4 @@
             </mat-button-toggle>
         </mat-button-toggle-group>
     </section>
-</div>
-
-<div class="footer">
-    <a routerLink="/personal-details"><button class="next">Next</button></a>
 </div>

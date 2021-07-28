@@ -1,16 +1,21 @@
 <div class="left_panel">
-    <a routerLink="/"><div class="back_btn">
+    <a routerLink="/">
         <img src="assets/VectorBack.svg" class="back">
-        <h3 class="btn" *ngIf="href === '/personal-details' || href === '/address-details' || href === '/assign-role' ||  href === '/assign-customers' ||  href === '/supporting-documents' || href === '/submitted'">Create User</h3>
+        <h3 class="btn" *ngIf="href === '/user-type' || href === '/personal-details' || href === '/address-details' || href === '/assign-role' ||  href === '/assign-customers' ||  href === '/supporting-documents' || href === '/submitted'">Create User</h3>
         <h3 class="btn" *ngIf="href === '/review-pd' || href === '/review-ad' || href === '/review-ar' || href === '/review-ac' || href === '/review-sd'">Review User Details</h3>
-    </div></a>
+    </a>
 
     <div class="list">
 
         <div class="ut">
-            <div *ngIf="href != '/review-pd' && href != '/review-ad' && href != '/review-ac' && href != '/review-ac' && href != '/review-sd'">
+            <div *ngIf="href != '/user-type' && href != '/review-pd' && href != '/review-ad' && href != '/review-ac' && href != '/review-ac' && href != '/review-sd'">
                 <div class="round"><input type="checkbox" disabled="true" id="checkbox" checked="true"/> <label class="onPage" for="checkbox"></label></div>
                 <label class="text">User Type</label>
+            </div>
+
+            <div *ngIf="href === '/user-type'">
+                <div class="round"><input type="checkbox" disabled="true" id="checkbox"/> <label class="onPage">1</label></div>
+                <label class="text onpage">User Type</label>
             </div>
         </div>
 
@@ -18,7 +23,6 @@
             <div *ngIf="href === '/personal-details'">
                 <div class="round"><input type="checkbox" disabled="true" id="checkbox"/> <label class="onPage">2</label></div>
                 <label class="text onpage">Personal Details</label>
-                <img src="assets/VectorBack.svg" class="this">
             </div>
 
             <div *ngIf="href === '/address-details' || href === '/assign-role' ||  href === '/assign-customers' ||  href === '/supporting-documents' || href === '/submitted' || href === '/review-ad' || href === '/review-ar' || href === '/review-ac' || href === '/review-sd'">
@@ -29,7 +33,6 @@
             <div *ngIf="href === '/review-pd'">
                 <div class="round"><input type="checkbox" disabled="true" id="checkbox" checked="true"/> <label class="onPage" for="checkbox"></label></div>
                 <label class="text onpage">Personal Details</label>
-                <img src="assets/VectorBack.svg" class="this">
             </div> 
 
             <div *ngIf="href != '/personal-details' && href != '/address-details' && href != '/assign-role' &&  href != '/assign-customers' &&  href != '/supporting-documents' && href != '/submitted' && href != '/review-pd' && href != '/review-ad' && href != '/review-ar' && href != '/review-ac' && href != '/review-sd'">
@@ -42,7 +45,6 @@
             <div *ngIf="href === '/address-details'">
                 <div class="round"><input type="checkbox" disabled="true" id="checkbox"/> <label class="onPage">3</label></div>
                 <label class="text onpage">Address Details</label>
-                <img src="assets/VectorBack.svg" class="this">
             </div>
 
             <div *ngIf="href === '/assign-role' ||  href === '/assign-customers' ||  href === '/supporting-documents' || href === '/submitted' || href === '/review-pd' || href === '/review-ar' || href === '/review-ac' || href === '/review-sd'">
@@ -53,7 +55,6 @@
             <div *ngIf="href === '/review-ad'">
                 <div class="round"><input type="checkbox" disabled="true" id="checkbox" checked="true"/> <label class="onPage" for="checkbox"></label></div>
                 <label class="text onpage">Address Details</label>
-                <img src="assets/VectorBack.svg" class="this">
             </div> 
 
             <div *ngIf="href != '/address-details' && href != '/assign-role' &&  href != '/assign-customers' &&  href != '/supporting-documents' && href != '/submitted' && href != '/review-pd' && href != '/review-ad' && href != '/review-ar' && href != '/review-ac' && href != '/review-sd'">
@@ -66,7 +67,6 @@
             <div *ngIf="href === '/assign-role'">
                 <div class="round"><input type="checkbox" disabled="true" id="checkbox"/> <label class="onPage">4</label></div>
                 <label class="text onpage">Assign Role</label>
-                <img src="assets/VectorBack.svg" class="this">
             </div>
 
             <div *ngIf="href === '/assign-customers' ||  href === '/supporting-documents' || href === '/submitted' || href === '/review-pd' || href === '/review-ad' || href === '/review-ac' || href === '/review-sd'">
@@ -77,7 +77,6 @@
             <div *ngIf="href === '/review-ar'">
                 <div class="round"><input type="checkbox" disabled="true" id="checkbox" checked="true"/> <label class="onPage" for="checkbox"></label></div>
                 <label class="text onpage">Assign Role</label>
-                <img src="assets/VectorBack.svg" class="this">
             </div> 
 
             <div *ngIf="href != '/assign-role' &&  href != '/assign-customers' &&  href != '/supporting-documents' && href != '/submitted' && href != '/review-pd' && href != '/review-ad' && href != '/review-ar' && href != '/review-ac' && href != '/review-sd'">
@@ -90,7 +89,6 @@
             <div *ngIf="href === '/assign-customers'">
                 <div class="round"><input type="checkbox" disabled="true" id="checkbox"/> <label class="onPage">5</label></div>
                 <label class="text onpage">Assign Customers</label>
-                <img src="assets/VectorBack.svg" class="this">
             </div>
 
             <div *ngIf="href === '/supporting-documents' || href === '/submitted' || href === '/review-pd' || href === '/review-ad' || href === '/review-ar' || href === '/review-sd'">
@@ -101,7 +99,6 @@
             <div *ngIf="href === '/review-ac'">
                 <div class="round"><input type="checkbox" disabled="true" id="checkbox" checked="true"/> <label class="onPage" for="checkbox"></label></div>
                 <label class="text onpage">Assign Customers</label>
-                <img src="assets/VectorBack.svg" class="this">
             </div> 
 
             <div *ngIf="href != '/assign-customers' &&  href != '/supporting-documents' && href != '/submitted' && href != '/review-pd' && href != '/review-ad' && href != '/review-ar' && href != '/review-ac' && href != '/review-sd'">
@@ -114,7 +111,6 @@
             <div *ngIf="href === '/supporting-documents'">
                 <div class="round"><input type="checkbox" disabled="true" id="checkbox"/> <label class="onPage">6</label></div>
                 <label class="text onpage">Supporting Documents</label>
-                <img src="assets/VectorBack.svg" class="this">
             </div>
 
             <div *ngIf="href === '/submitted' || href === '/review-pd' || href === '/review-ad' || href === '/review-ar' || href === '/review-ac'">
@@ -125,7 +121,6 @@
             <div *ngIf="href === '/review-sd'">
                 <div class="round"><input type="checkbox" disabled="true" id="checkbox" checked="true"/> <label class="onPage" for="checkbox"></label></div>
                 <label class="text onpage">Supporting Documents</label>
-                <img src="assets/VectorBack.svg" class="this">
             </div> 
 
             <div *ngIf="href != '/supporting-documents' && href != '/submitted' && href != '/review-pd' && href != '/review-ad' && href != '/review-ar' && href != '/review-ac' && href != '/review-sd'">
@@ -139,5 +134,5 @@
 
 <div class="footer" *ngIf="href != '/submitted'" >
     <a [routerLink]="['/', pageForward]"><button class="next">Next</button></a>
-    <a [routerLink]="['/', pageBackward]"><button class="previous">Previous</button></a>
+    <a [routerLink]="['/', pageBackward]" *ngIf="href != '/user-type'"><button class="previous">Previous</button></a>
 </div>

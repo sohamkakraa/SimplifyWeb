@@ -5,7 +5,7 @@
     <div class="searchbar">
         <img src="assets/Oval.svg" class="oval"> 
         <img src="assets/Shapehandle.svg" class="handle"> 
-        <input class="search" type="text" placeholder="Search customer here">
+        <input class="search" type="text" placeholder="Search customer here" [(ngModel)]="searchedKeyword">
     </div>
    
     <table class="table">
@@ -16,11 +16,11 @@
             <th>Industry</th>
         </tr>
 
-        <tr class="rows" *ngFor="let customer of customers">
+        <tr class="rows" *ngFor="let customer of customers | filter:searchedKeyword">
             <td class="cname">
                 <input type="checkbox">
-                <p class="name">{{customer.name}}</p>
-                <p class="email">{{customer.emailid}}</p>
+                <img class="profile" [src]="customer.logo" />
+                {{customer.name}}
             </td>
             <td>{{customer.segment}}</td>
             <td>{{customer.industry}}</td>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-type',
@@ -8,10 +9,15 @@ import { Component, OnInit } from '@angular/core';
 export class UserTypeComponent implements OnInit {
   
   usertype?: string;
-  constructor() { }
-  
-  ngOnInit(): void {
-    console.log(this.usertype);
+
+  public href: string = "";
+
+  constructor(private router: Router) {}
+
+  ngOnInit() {
+    this.href = this.router.url;
   }
+
+  @Input() next: string = "personal-details";
 
 }

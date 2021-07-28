@@ -1,92 +1,19 @@
-.left_panel {
+.body{
     position: absolute;
-    width: 268px;
-    height: 93.5%;
-    left: 61px;
-    top: 52px;
-    border: 0px solid #154454;
+    bottom: 8%;
+    left: 4.25%;
+    top: 20%;
+    right: 0%;
 
     background: #FFFFFF;
-    box-shadow: 2px 0px 25px rgba(0, 0, 0, 0.06);
-}
-
-.back_btn{
-    position: absolute;
-    left: 6.44%;
-    top: 3%;
-    right: 93.12%;
-    bottom: 87.11%;
-    height: 40px;
-    width: 140px;
-    border: 0px solid #154454;
-}
-
-.back {
-    position: absolute;
-    left: 10%;
-    top: 5%;
-    border: 0px solid #154454;
-}
-
-.btn {
-    position: absolute;
-    left: 25%;
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 18px;
-    /* identical to box height, or 100% */
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.25px;
-
-    color: #154454;
-}
-
-.heading {
-
-    position: absolute;
-
-    left: 10%;
-    top: 10%;
-
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 40px;
-    /* or 125% */
-    display: flex;
-    align-items: center;
-
-    color: #154454;
-}
-
-.subheading {
-    position: absolute;
-
-    left: 10%;
-    top: 30%;
-
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    /* or 137% */
-    display: flex;
-    align-items: center;
-
-    color: #154454;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
 }
 
 .choose{
     position: absolute;
-    left: 31.19%;
-    right: 31.48%;
-    top: 15.89%;
-    bottom: 80.99%;
+    left: 21.96%;
+    top: 5%;
 
     font-family: Nunito Sans;
     font-style: normal;
@@ -100,6 +27,22 @@
 
     color: #154454;
 }
+
+.info {
+    position: absolute;
+    left: 21.96%;
+    top: 10%;
+    
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 137% */
+    display: flex;
+    align-items: center;   
+}
+
 .mat-button-toggle-group{
     position: absolute;
     left: 0%;
@@ -120,6 +63,14 @@
     border-radius: 10px;
 }
 
+.mat-button-toggle-checked{
+    background: #E3F5FC !important;
+    border: 1px solid #0783B6 !important;
+    box-sizing: border-box !important;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08) !important;
+    border-radius: 6px !important;
+}
+
 .userPro {
     position:absolute; 
     width: 60px;
@@ -131,6 +82,10 @@
     border: 1px solid #2E93B7;
     box-sizing: border-box;
     border-radius: 10px;
+}
+
+.userPro:hover{
+    background: #0783B6;
 }
 
 .face {
@@ -188,12 +143,24 @@
     color: #333333;
 }
 
+.choice1{
+    position: absolute;
+    width: 400px;
+    height: 108px;
+    left: 300px;
+    top: 100px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+}
+
 .choice2{
     position: absolute;
     width: 400px;
     height: 108px;
-    left: 850px;
-    top: 170px;
+    left: 724px;
+    top: 100px;
 
     background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
@@ -204,8 +171,8 @@
     position: absolute;
     width: 400px;
     height: 108px;
-    left: 426px;
-    top: 302px;
+    left: 300px;
+    top: 232px;
 
     background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
@@ -216,48 +183,10 @@
     position: absolute;
     width: 400px;
     height: 108px;
-    left: 850px;
-    top: 302px;
+    left: 724px;
+    top: 232px;
 
     background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
-}
-
-.footer {
-    position: absolute;
-    width: 79%;
-    height: 64px;
-    left: 329px;
-    top: 92%;
-
-    background: #FFFFFF;
-    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
-}
-
-.next{
-    position: absolute;
-    width: 75px;
-    height: 32px;
-    left: 90%;
-    top: 30%;
-
-    border: 0px solid #E0E0E0;
-    background: #EBEBEB;
-    border-radius: 10px;
-
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
-    /* identical to box height, or 143% */
-    align-items: center;
-    letter-spacing: 0.25px;
-
-    color: #AAAAAA;
-}
-
-.selected-value {
-    margin: 40% 40%;
 }
