@@ -11,6 +11,9 @@ import { User } from 'src/app/User';
 })
 export class ReviewPdComponent implements OnInit {
   @Input() user?: User;
+  @Input() bodyRight?: string;
+
+  public show:boolean = false;
 
   title: string = 'Mr.';
   titleList: string[] = ['Mr.', 'Miss.'];
@@ -32,7 +35,31 @@ export class ReviewPdComponent implements OnInit {
     console.log(this.user);
   }
 
+  statusManager(str: string){
+    if(str === "Active")
+      return "green";
+    else if(str === "Draft")
+      return "yellow";
+    else if(str === "Pending Approval")
+      return "orange";
+    else if(str === "Inactive")
+      return "grey";
+    else
+      return "red";
+  }
+
+  remarks() {
+    this.show = !this.show;
+  }
+  
   @Input() next: string = "review-ad";
   @Input() previous: string = "users";
 
+  closeSideMenu(){
+    if(this.show){
+      return  this.bodyRight = '25%';
+    }else{
+      return  this.bodyRight = '0%'
+    }
+  }
 }

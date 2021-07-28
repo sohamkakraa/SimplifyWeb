@@ -1,0 +1,21 @@
+<div class="body">
+    <button class="remarks" [style.color]='color1' [style.font-weight]='weight1' (click)="Switch1()">Remarks</button>
+    <div class="choice1" *ngIf="showRemarks"></div>
+    <button class="changes" [style.color]='color2' [style.font-weight]='weight2' (click)="Switch2()">Changes</button>
+    <div class="choice2" *ngIf="showChanges"></div>
+    <div class="add">
+        <div class="up"></div>
+        <div class="down"></div>
+    </div>
+    <div class="cross" onClick="window.location.reload();">
+        <div class="right"></div>
+        <div class="left"></div>
+    </div>
+    <hr class="seperation">
+    <div class="remarksBody" *ngIf="showRemarks">
+        <div *ngIf="tableEmpty">
+            <div class="cirle"><img class="commentLogo" src="assets/Vectorcomment.png"></div>
+            <p class="text">Your remarks will appear here<br>Select a section to add remark</p>
+        </div>
+    </div>
+</div>

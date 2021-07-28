@@ -1,15 +1,27 @@
+.body{
+    position: absolute;
+    bottom: 8%;
+    left: 4.25%;
+    top: 20%;
+    right: 0%;
+
+    overflow-y: scroll;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
 .heading{
     position: absolute;
     left: 31.19%;
-    right: 31.48%;
-    top: 15.89%;
-    bottom: 80.99%;
+    top: 5%;
 
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 26px;
     /* identical to box height, or 100% */
     display: flex;
     align-items: center;
@@ -21,15 +33,13 @@
 .info {
     position: absolute;
     left: 31.19%;
-    right: 41.07%;
-    top: 19.79%;
-    bottom: 77.34%;
+    top: 10%;
     
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 24px;
     /* identical to box height, or 137% */
     display: flex;
     align-items: center;
@@ -40,14 +50,12 @@
 .document {
     position: absolute;
     left: 31.19%;
-    right: 60.69%;
-    top: 25.65%;
-    bottom: 72.53%;
+    top: 20%;
 
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 14px;
     /* identical to box height, or 100% */
     display: flex;
@@ -62,7 +70,7 @@
     width: 584px;
     height: 120px;
     left: 31.19%;
-    top: 28%;
+    top: 25%;
 
     background: #E3F5FC;
     border: 1px dashed #2E93B7;
@@ -75,7 +83,7 @@
     left: 38%;
     top: 50%;
 
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -92,7 +100,7 @@
     left: 49%;
     top: 65%;
 
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -110,7 +118,7 @@
     left: 45%;
     top: 78.5%;
     
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -150,15 +158,13 @@
 .uplodedDocument{
     position: absolute;
     left: 31.19%;
-    right: 57.76%;
-    top: 47.14%;
-    bottom: 50.78%;
+    top: 55%;
     
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 16px;
+    line-height: 24px;
     /* identical to box height, or 100% */
     display: flex;
     align-items: center;
@@ -171,7 +177,7 @@
     position: absolute;
     height: 253px;
     left: 31.19%;
-    top: 50%;
+    top: 60%;
     width: 584px;
     
     /* white */
@@ -182,14 +188,14 @@
 }
 
 .sub {
-    height: 49px;
+    height: 30px;
     background: #F3F6F9;
     border: 0px solid #EBEBEB;
 
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 14px;
     /* identical to box height, or 100% */
     align-items: center;

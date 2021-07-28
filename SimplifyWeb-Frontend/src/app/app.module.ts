@@ -26,6 +26,7 @@ import { ReviewAcComponent } from './components/review-ac/review-ac.component';
 import { ReviewSdComponent } from './components/review-sd/review-sd.component';
 import { SortDirective } from './directive/sort.directive';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { RemarksComponent } from './components/remarks/remarks.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     ReviewAcComponent,
     ReviewSdComponent,
     SortDirective,
+    RemarksComponent,
   ],
   imports: [
     BrowserModule,

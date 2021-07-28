@@ -134,5 +134,5 @@
 
 <div class="footer" *ngIf="href != '/submitted'" >
     <a [routerLink]="['/', pageForward]"><button class="next">Next</button></a>
-    <a [routerLink]="['/', pageBackward]" *ngIf="href != '/user-type'"><button class="previous">Previous</button></a>
+    <a [routerLink]="['/', pageBackward]" *ngIf="href != '/user-type' && href != '/review-pd'"><button class="previous">Previous</button></a>
 </div>

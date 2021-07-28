@@ -1,11 +1,129 @@
+.body {
+    position: absolute;
+    bottom: 8%;
+    left: 4.25%;
+    top: 20%;
+    /* right: 25%; */
+
+    overflow-y: scroll;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+.userid{
+    position: absolute;
+    width: 103px;
+    height: 28px;
+    left: 20%;
+    top: 2.5%;
+
+    background: #E3F5FC;
+    border-radius: 30px;
+
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height, or 117% */
+    display: flex;
+    align-items: center;
+    color: #666666;
+}
+
+.usertype{
+    position: absolute;
+    width: 103px;
+    height: 28px;
+    left: 32.5%;
+    top: 2.55%;
+    
+    background: #E3F5FC;
+    border-radius: 30px;
+
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height, or 117% */
+    display: flex;
+    align-items:center;
+    color: #666666;
+}
+
+.userstatus{
+    position: absolute;
+    width: 103px;
+    height: 28px;
+    left: 45%;
+    top: 2.55%;
+
+    background: #E3F5FC;
+    border-radius: 30px;
+
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height, or 117% */
+    text-align: center;
+    color: #666666;
+}
+
+.childWrapper {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .childWrapper > li {
+    float: left;
+    padding-top: 6%;
+    padding-left: 12.5%;
+  }
+
+  .box{
+    width: 12px;
+    height: 12px;
+    margin-left: -40%;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 2px;
+  }
+
+.remark{
+    position: absolute;
+    width: 112px;
+    height: 32px;
+    left: 90%;
+    top: 2.5%;
+
+    background: #EBEBEB;
+    border: 0px solid #FFFFFF;
+    border-radius: 6px;
+
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+    display: flex;
+    align-items: center;
+
+    color: #0783B6;
+}
+
 .heading{
     position: absolute;
-    left: 31.19%;
-    right: 31.48%;
-    top: 15.89%;
-    bottom: 80.99%;
+    left: 20%;
+    top: 10%;
 
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -20,12 +138,10 @@
 
 .info {
     position: absolute;
-    left: 31.19%;
-    right: 41.07%;
-    top: 19.79%;
-    bottom: 77.34%;
+    left: 20%;
+    top: 15%;
     
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -39,13 +155,11 @@
 
 .email {
     position: absolute;
-    left: 31.19%;
-    right: 64.64%;
-    top: 25.78%;
-    bottom: 72.4%;
+    left: 20%;
+    top: 25%;
 
     /* Lables */
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -61,15 +175,15 @@
     position: absolute;
     width: 280px;
     height: 30px;
-    left: 31.19%;
-    top: 28%;
+    left: 20%;
+    top: 27.5%;
 
     background: #FFFFFF;
     border: 1px solid #EBEBEB;
     box-sizing: border-box;
     border-radius: 4px;
 
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -82,13 +196,11 @@
 
 .title {
     position: absolute;
-    left: 31.19%;
-    right: 66.25%;
-    top: 35.55%;
-    bottom: 62.63%;
+    left: 20%;
+    top: 37.5%;
 
     /* Lables */
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -104,8 +216,8 @@
     position: absolute;
     width: 77px;
     height: 30px;
-    left: 31.19%;
-    top: 37%;
+    left: 20%;
+    top: 40%;
 
     background: #FFFFFF;
     border: 1px solid #EBEBEB;
@@ -116,7 +228,7 @@
 mat-select-trigger {
     margin-left: 10%;
     margin-top: 10%;
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -130,13 +242,11 @@ mat-select-trigger {
 
 .firstnames {
     position: absolute;
-    left: 37.55%;
-    right: 57.1%;
-    top: 35.55%;
-    bottom: 62.63%;
+    left: 30%;
+    top: 37.5%;
 
     /* Lables */
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -152,15 +262,15 @@ mat-select-trigger {
     position: absolute;
     width: 193px;
     height: 30px;
-    left: 37.55%;
-    top: 37%;
+    left: 30%;
+    top: 40%;
     
     background: #FFFFFF;
     border: 1px solid #EBEBEB;
     box-sizing: border-box;
     border-radius: 4px;
 
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -176,12 +286,10 @@ mat-select-trigger {
 .lastnames {
     position: absolute;
     left: 53.44%;
-    right: 41.22%;
-    top: 35.55%;
-    bottom: 62.63%;
+    top: 37.5%;
 
     /* Lables */
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -198,14 +306,14 @@ mat-select-trigger {
     width: 280px;
     height: 30px;
     left: 53.44%;
-    top: 37%;
+    top: 40%;
     
     background: #FFFFFF;
     border: 1px solid #EBEBEB;
     box-sizing: border-box;
     border-radius: 4px;
     
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -217,57 +325,13 @@ mat-select-trigger {
     color: #666666;
 }
 
-
-/* .countryP {
-    position: absolute;
-    left: 31.19%;
-    right: 64.64%;
-    top: 45.31%;
-    bottom: 52.86%;
-
-    font-family: SF Pro Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 14px;
-    display: flex;
-    align-items: center;
-
-    color: #666666;
-} */
-
-/* .country-selectP {
-    position: absolute;
-    width: 77px;
-    height: 30px;
-    left: 31.19%;
-    top: 47%;
-    
-    background: #FFFFFF;
-    border: 1px solid #EBEBEB;
-    box-sizing: border-box;
-    border-radius: 4px;
-    
-    font-family: SF Pro Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 14px;
-
-    display: flex;
-    align-items: center;
-
-    color: #666666;
-} */
-
 .numbersP {
     position: absolute;
-    left: 31.19%;
-    top: 45.31%;
-    bottom: 52.86%;
+    left: 20%;
+    top: 50%;
     
     /* Lables */
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -283,66 +347,22 @@ mat-select-trigger {
     position: absolute;
     width: 280px;
     height: 30px;
-    left: 31.19%;
-    top: 47%;
+    left: 20%;
+    top: 52.5%;
     
     background: #FFFFFF;
     border: 1px solid #EBEBEB;
     box-sizing: border-box;
     border-radius: 4px;
 }
-
-/* .countryS {
-    position: absolute;
-    left: 53.44%;
-    right: 43.05%;
-    top: 45.31%;
-    bottom: 52.86%;
-
-    font-family: SF Pro Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 14px;
-    
-    display: flex;
-    align-items: center;
-
-    color: #666666;
-}
-
-.country-selectS {
-    position: absolute;
-    width: 77px;
-    height: 30px;
-    left: 53.44%;
-    top: 47%;
-    
-    background: #FFFFFF;
-    border: 1px solid #EBEBEB;
-    box-sizing: border-box;
-    border-radius: 4px;
-    
-    font-family: SF Pro Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 14px;
-
-    display: flex;
-    align-items: center;
-
-    color: #666666;
-} */
 
 .numbersS {
     position: absolute;
     left: 53.44%;
-    top: 45.31%;
-    bottom: 52.86%;
+    top: 50%;
     
     /* Lables */
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -359,7 +379,7 @@ mat-select-trigger {
     width: 280px;
     height: 30px;
     left: 53.44%;
-    top: 47%;
+    top: 52.5%;
     
     background: #FFFFFF;
     border: 0px solid #EBEBEB;
@@ -369,13 +389,11 @@ mat-select-trigger {
 
 .landlines {
     position: absolute;
-    left: 31.19%;
-    right: 61.42%;
-    top: 55.08%;
-    bottom: 43.1%;
+    left: 20%;
+    top: 62.5%;
     
     /* Lables */
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -391,8 +409,8 @@ mat-select-trigger {
     position: absolute;
     width: 280px;
     height: 30px;
-    left: 31.19%;
-    top: 57%;
+    left: 20%;
+    top: 65%;
     
     background: #FFFFFF;
     border: 1px solid #EBEBEB;
@@ -403,12 +421,10 @@ mat-select-trigger {
 .designations {
     position: absolute;
     left: 53.44%;
-    right: 40.7%;
-    top: 55.08%;
-    bottom: 43.1%;
+    top: 62.5%;
     
     /* Lables */
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -425,7 +441,7 @@ mat-select-trigger {
     width: 280px;
     height: 30px;
     left: 53.44%;
-    top: 57%;
+    top: 65%;
     
     background: #FFFFFF;
     border: 1px solid #EBEBEB;
@@ -435,13 +451,11 @@ mat-select-trigger {
 
 .profilePics {
     position: absolute;
-    left: 31.19%;
-    right: 59.59%;
-    top: 64.84%;
-    bottom: 33.33%;
+    left: 20%;
+    top: 75%;
     
     /* Lables */
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -457,8 +471,8 @@ mat-select-trigger {
     position: absolute;
     width: 254px;
     height: 150px;
-    left: 31.19%;
-    top: 67%;
+    left: 20%;
+    top: 77.5%;
 
     background: #E3F5FC;
     border: 1px dashed #2E93B7;
@@ -471,7 +485,7 @@ mat-select-trigger {
     left: 25%;
     top: 50%;
 
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -488,7 +502,7 @@ mat-select-trigger {
     left: 47%;
     top: 65%;
 
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -506,7 +520,7 @@ mat-select-trigger {
     left: 37%;
     top: 78.5%;
     
-    font-family: SF Pro Display;
+    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -527,7 +541,7 @@ mat-select-trigger {
     border: 0px solid #666666;
 }
 
-.box {
+.Box {
     position: absolute;
     left: 46%;
     top: 30%;

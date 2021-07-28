@@ -1,5 +1,17 @@
 <app-sidebar pageForward={{next}} pageBackward={{previous}} href={{href}}></app-sidebar>
-<div class="body">
+
+<div class="body" [style.right]='closeSideMenu()' >
+    <label class="userid">  User ID:</label>
+    <label class="usertype">  User Type:</label>
+    <label class="userstatus">
+        <div class="childWrapper">
+            <li class="colorbox"><div class="box" [ngStyle]="{'background-color' : statusManager('active')}"></div></li>
+            <li>user.status</li>
+        </div>
+    </label>
+
+    <button class="remark" (click)="remarks()" *ngIf="!show">Remarks</button>
+
     <h2 class="heading">Personal Details</h2>
     <p class="info">Please add the personal details of the user</p>
 
@@ -17,13 +29,7 @@
 
     <p class="lastnames">Last Name <strong style="color: red;">*</strong></p>
     <input type="text" class="lastname" placeholder="    Enter last name" />
-
-    <!-- <p class="countryP">Country <strong style="color: red;">*</strong></p>
-    <mat-select class="country-selectP" [(ngModel)]="country">
-        <mat-select-trigger>{{country}}</mat-select-trigger>
-        <mat-option *ngFor="let country of countryList" [value]="country">{{country}}</mat-option>
-    </mat-select> -->
-
+    
     <p class="numbersP">Primary Contact Number <strong style="color: red;">*</strong></p>
     <form #f="ngForm" [formGroup]="phoneForm" class="numberP">
     	<ngx-intl-tel-input
@@ -34,12 +40,6 @@
             [numberFormat]="PhoneNumberFormat.National" name="phone" formControlName="phone">
 		</ngx-intl-tel-input>
     </form>
-
-    <!-- <p class="countryS">Country </p>
-    <mat-select class="country-selectS" [(ngModel)]="country">
-        <mat-select-trigger>{{country}}</mat-select-trigger>
-        <mat-option *ngFor="let country of countryList" [value]="country">{{country}}</mat-option>
-    </mat-select> -->
 
     <p class="numbersS">Alternate Contact Number</p>
     <form #f="ngForm" [formGroup]="phoneForm" class="numberS">
@@ -59,10 +59,9 @@
     <input type="text" class="designation" placeholder="    Enter user's designation" />
 
     <p class="profilePics">Upload Profile Picture</p>
-    <!-- <div class="upload" ngf-drop ngf-select ng-model="files" class="drop-box" ngf-drag-over-class="'dragover'" ngf-multiple="true" ngf-allow-dir="true" accept="image/*,application/pdf" ngf-pattern="'image/*,application/pdf'">Drop pdfs or images here or click to upload</div> -->
     <div class="upload">
         <img src="assets/Vectorarrow.svg" class="arrow"> 
-        <img src="assets/Vectorbox.svg" class="box"> 
+        <img src="assets/Vectorbox.svg" class="Box"> 
         <img src="assets/Vectorup copy.svg" class="up"> 
         <p class="droptext">Drag & Drop Picture here</p>
         <p class="ortext">Or</p>
@@ -70,3 +69,5 @@
 
     </div>
 </div>
+
+<app-remarks *ngIf="show"></app-remarks>
