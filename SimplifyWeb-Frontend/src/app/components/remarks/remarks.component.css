@@ -288,3 +288,102 @@
     margin-left: 90%;
     margin-top: -13%;
 }
+
+.view{
+    margin-left: 90%;
+    margin-top: 0%;
+}
+.pupil{
+    margin-left: -40%;
+}
+
+.table td{
+    border-top: none;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.alert{
+    position: absolute;
+    width: 700px;
+    height: 184px;
+    left: 325px;
+    top: 291px;
+
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
+    border-radius: 6px;
+}
+
+.close{
+    margin-top: -7%;
+}
+
+.header{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+    display: flex;
+    align-items: center;
+
+    color: #154454;
+}
+
+.alertTable{
+    width: 100%;
+    bottom: 0%;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height, or 117% */
+
+    color: #AAAAAA;
+}
+
+
+
+.name{
+    width: 100%;
+    bottom: 0%;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height, or 117% */
+
+    color: #AAAAAA;
+}
+
+.date{
+    width: 100%;
+    bottom: 0%;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height, or 117% */
+
+    color: #AAAAAA;
+
+    margin-left: 70%;
+    margin-top: -4%;
+}
+
+.txt{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 117% */
+
+    color: #333333;
+}

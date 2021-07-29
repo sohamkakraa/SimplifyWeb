@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Remark } from '../../Remark';
 import { REMARKS } from '../../mock-remarks';
+import { Change } from '../../Change';
+import { CHANGES } from '../../mock-changes';
 
 @Component({
   selector: 'app-remarks',
@@ -10,8 +12,11 @@ import { REMARKS } from '../../mock-remarks';
 export class RemarksComponent implements OnInit {
 
   remarksArray: Remark[] = REMARKS;
+  changesArray: Change[] = CHANGES;
+  index?: number = 0;
 
   show:boolean = false;
+  showAlert:boolean = false;
   typing:boolean = false;
   showRemarks:boolean = true;
   showChanges:boolean = false;
@@ -43,6 +48,14 @@ export class RemarksComponent implements OnInit {
     this.showRemarks = false;
     this.showChanges = true;
     this.chosen()
+  }
+
+  showAlertF(){
+    this.showAlert = true;
+  }
+
+  showAlertT(){
+    this.showAlert = false;
   }
 
   chosen(){

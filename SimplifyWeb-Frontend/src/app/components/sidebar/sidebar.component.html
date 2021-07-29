@@ -110,22 +110,22 @@
         <div class="sd">
             <div *ngIf="href === '/supporting-documents'">
                 <div class="round"><input type="checkbox" disabled="true" id="checkbox"/> <label class="onPage">6</label></div>
-                <label class="text onpage">Supporting Documents</label>
+                <label class="text onpage sd">Supporting Documents</label>
             </div>
 
             <div *ngIf="href === '/submitted' || href === '/review-pd' || href === '/review-ad' || href === '/review-ar' || href === '/review-ac'">
                 <div class="round"><input type="checkbox" disabled="true" id="checkbox" checked="true"/> <label class="onPage" for="checkbox"></label></div>
-                <label class="text">Supporting Documents</label>
+                <label class="text sd">Supporting Documents</label>
             </div> 
 
             <div *ngIf="href === '/review-sd'">
                 <div class="round"><input type="checkbox" disabled="true" id="checkbox" checked="true"/> <label class="onPage" for="checkbox"></label></div>
-                <label class="text onpage">Supporting Documents</label>
+                <label class="text onpage sd">Supporting Documents</label>
             </div> 
 
             <div *ngIf="href != '/supporting-documents' && href != '/submitted' && href != '/review-pd' && href != '/review-ad' && href != '/review-ar' && href != '/review-ac' && href != '/review-sd'">
                 <div class="round"><input type="checkbox" disabled="true" id="checkbox"/> <label class="beforePage">6</label></div>
-                <label class="text">Supporting Documents</label>
+                <label class="text sd">Supporting Documents</label>
             </div>
         </div>
     </div>

@@ -128,14 +128,22 @@
   position: absolute;
   left: 48%;
   top: 60%;
-  right: 40%;
-  bottom: 70%;}
+  right: 41%;
+}
+
+.ac label{
+  width: 150px;
+}
 
 .sd{
   position: absolute;
   left: 62%;
   top: 60%;
-  right: 22%;
+  right: 35%;
+}
+
+.sd label{
+  width: 200px;
 }
 
 .text{

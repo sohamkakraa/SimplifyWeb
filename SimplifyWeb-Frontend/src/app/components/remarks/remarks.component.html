@@ -47,6 +47,41 @@
                 <img src="assets/Vectortick2.svg" class="tick"> 
             </div>
         </div>
-
     </div>
+    <div class="remarksBody" *ngIf="showChanges">
+        <table class="table" *ngIf="!tableEmpty">
+            <tr *ngFor="let change of changesArray">
+                <td>
+                    <p class="creator">{{change.creator}}</p>
+                    <p class="datetime">{{change.date}}, {{change.time}}</p>
+                    <p class="remarkText">{{change.text}}</p>
+                    <div class="view" (click)="showAlertF()">
+                        <img class="eye" src="assets/Vectoreye.png">
+                        <img class="pupil" src="assets/Vectorpupil.png">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="alert alert-custom  fade in alert-dismissable show" *ngIf="showAlert">
+    <h1 class="header">View Changes</h1>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="showAlertT()">
+        <span aria-hidden="true" style="font-size:30px;">×</span>
+    </button>
+    <hr style="border: 1px solid #EBEBEB; margin-left: -3%; width: 106%;">
+    <p class="name">{{changesArray[0].creator}}</p>
+    <p class="date">{{changesArray[0].date}}, {{changesArray[0].time}}</p>
+    <p class="txt">{{remarksArray[0].text}}</p>
+    <tr>
+        <td style="width:349px; border-right: 1px solid #EBEBEB; border-top: 1px solid #EBEBEB;">
+            <p class="name">Old Value</p>
+            <p class="txt">sam.wilson123@gmail.com</p>
+        </td>
+        <td style=" width:349px; padding-left: 5%; border-top: 1px solid #EBEBEB;">
+            <p class="name">Changed Value</p>
+            <p class="txt" style="color: #F08040;">sam.Wilson@gmail.com</p>
+        </td>
+    </tr>
 </div>

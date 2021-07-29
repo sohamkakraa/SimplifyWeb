@@ -9,19 +9,19 @@
         <input class="search" type="text" placeholder="Search role here" [(ngModel)]="searchedKeyword">
     </div>
 
-    <table class="table">
+    <table class="bordered">
 
         <tr class="titlebar">
-            <th>Role Name</th>
-            <th>Role Type</th>
+            <th height="30" [appSort]="roles" data-order="desc" data-name="name" scope="col">Role Name <img class="up" src="assets/Vector.png"></th>
+            <th height="30" [appSort]="roles" data-order="desc" data-name="type" scope="col">Role Type <img class="up" src="assets/Vector.png"></th>
         </tr>
 
         <tr class="rows" *ngFor="let role of roles | filter:searchedKeyword">
-            <td>
+            <td class="firstrow">
                 <input type="radio" name="radAnswer">
                 {{role.name}}
             </td>
-            <td>{{role.type}}</td>
+            <td  class="lastrow">{{role.type}}</td>
         </tr>
 
     </table>

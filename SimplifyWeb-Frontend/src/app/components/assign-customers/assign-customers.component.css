@@ -83,14 +83,13 @@
     border: 0px solid #707070;
     border-radius: 4px;
 }
-
+/* 
 .table {
     position: absolute;
     width: 584px;
     left: 31.19%;
     top: 26%;
     
-    /* white */
     background: #F3F6F9;
     border: 1px solid #EBEBEB;
     border-radius: 8px;
@@ -106,7 +105,6 @@
     font-weight: normal;
     font-size: 12px;
     line-height: 14px;
-    /* identical to box height, or 100% */
     align-items: center;
   
     color: #666666;
@@ -122,12 +120,61 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
-    /* identical to box height, or 100% */
-    /* display: flex; */
     align-items: center;
 
     color: #333333;
-}
+} */
+.bordered {
+    border: 0px solid #CCCCCC;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 1px 1px #CCCCCC;
+  }
+  table {
+    border-spacing: 0;
+    position: absolute;
+    width: 584px;
+    left: 31.19%;
+    top: 26%;
+    
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    border-radius: 8px;
+  
+    box-sizing: border-box;
+  }        
+    
+  .lastrow{
+    border-right: 1px solid #EBEBEB;
+    border-radius: 6px;
+  }
+  
+  .bordered th {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height, or 117% */
+    height: 30px;
+    background: rgba(235, 235, 235, 0.4);
+    border: 0px solid #EBEBEB;
+    box-sizing: border-box;
+    border-radius: 0px 0px 0px 0px;
+  }
+  
+  .bordered td{
+    height: 60px;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+    align-items: center;
+    border-top: 1px solid #EBEBEB;
+  
+    color: #333333;
+  }
 
 .checkbox {
     height: 20px;
@@ -135,6 +182,8 @@
 }
 
 .cname {
+    border-left: 1px solid #EBEBEB;
+    border-radius: 6px;
     font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;

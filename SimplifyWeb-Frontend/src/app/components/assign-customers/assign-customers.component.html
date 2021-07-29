@@ -8,7 +8,7 @@
         <input class="search" type="text" placeholder="Search customer here" [(ngModel)]="searchedKeyword">
     </div>
    
-    <table class="table">
+    <table class="bordered">
 
         <tr class="titlebar">
             <th>Company Name</th>
@@ -23,7 +23,7 @@
                 {{customer.name}}
             </td>
             <td>{{customer.segment}}</td>
-            <td>{{customer.industry}}</td>
+            <td class="lastrow">{{customer.industry}}</td>
         </tr>
 
     </table>
