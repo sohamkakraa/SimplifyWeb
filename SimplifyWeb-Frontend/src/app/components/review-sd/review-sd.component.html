@@ -1,5 +1,23 @@
 <app-sidebar pageForward={{next}} pageBackward={{previous}} href={{href}}></app-sidebar>
-<div class="body">
+
+<div class="body" [style.right]='closeSideMenu()'>
+    <label class="userid">  User ID:</label>
+    <label class="usertype">  User Type:</label>
+    <label class="userstatus">
+        <div class="childWrapper">
+            <li class="colorbox"><div class="box" [ngStyle]="{'background-color' : statusManager('active')}"></div></li>
+            <li>user.status</li>
+        </div>
+    </label>
+
+    <button class="remark" (click)="remarks()" *ngIf="!show">
+        <img src="assets/VectorCommentBlue.svg">
+        <img class="line1" src="assets/Line 657.svg">
+        <img class="line2" src="assets/Line 658.svg">
+        <img class="line3" src="assets/Line 659.svg">
+        <p class="comment">Remarks</p>
+    </button>
+
     <h2 class="heading">Supporting Documents</h2>
     <p class="info">If you have any supporting documents attach here.</p>
 
@@ -7,7 +25,7 @@
     <!-- <div class="upload" ngf-drop ngf-select ng-model="files" class="drop-box" ngf-drag-over-class="'dragover'" ngf-multiple="true" ngf-allow-dir="true" accept="image/*,application/pdf" ngf-pattern="'image/*,application/pdf'">Drop pdfs or images here or click to upload</div> -->
     <div class="upload">
         <img src="assets/Vectorarrow.svg" class="arrow"> 
-        <img src="assets/Vectorbox.svg" class="box"> 
+        <img src="assets/Vectorbox.svg" class="Box"> 
         <img src="assets/Vectorup copy.svg" class="up"> 
         <p class="droptext">Drag & Drop Document here</p>
         <p class="ortext">Or</p>
@@ -30,3 +48,5 @@
     </table>
 
 </div>
+
+<app-remarks *ngIf="show"></app-remarks>

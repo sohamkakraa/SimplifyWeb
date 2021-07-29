@@ -15,9 +15,35 @@ export class ReviewSdComponent implements OnInit {
 
   constructor(private router: Router) {}
 
-    ngOnInit() {
-        this.href = this.router.url;
+  ngOnInit() {
+    this.href = this.router.url;
+  }
+  
+  statusManager(str: string){
+    if(str === "Active")
+      return "green";
+    else if(str === "Draft")
+      return "yellow";
+    else if(str === "Pending Approval")
+      return "orange";
+    else if(str === "Inactive")
+      return "grey";
+    else
+      return "red";
+  }
+
+  public show:boolean = false;
+  @Input() bodyRight?: string;
+
+  remarks() {
+    this.show = !this.show;
+  }
+
+  closeSideMenu(){
+    if(this.show){
+      return  this.bodyRight = '25%';
+    }else{
+      return  this.bodyRight = '0%'
     }
-
-
+  }
 }

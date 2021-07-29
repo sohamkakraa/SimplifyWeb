@@ -1,4 +1,4 @@
-.table {
+/* .table {
   position: absolute;
   width: 93%;
   left: 5%;
@@ -6,45 +6,79 @@
   top: 20%;
 
   /* white */
-  background: #FFFFFF;
+  /* background: #FFFFFF;
   border: 1px solid #EBEBEB;
   box-sizing: border-box;
   border-radius: 6%;
 
+} */
+.bordered {
+  border: 0px solid #CCCCCC;
+  border-radius: 6px 6px 6px 6px;
+  box-shadow: 0 1px 1px #CCCCCC;
+}
+table {
+  border-spacing: 0;
+  position: absolute;
+  width: 93%;
+  left: 6%;
+  right: 90%;
+  top: 20%;
+
+  /* white */
+  background: #FFFFFF;
+  border: 0px solid #EBEBEB;
+  box-sizing: border-box;
+  border-radius: 6%;
+}        
+/* .bordered th:first-child {
+  border-radius: 6px 0 0 0;
 }
 
-.titlebar{
-  height: 30px;
+.bordered th:last-child {
+  border-radius: 0 6px 0 0;
+} */
 
-  background: rgba(235, 235, 235, 0.4);
-  border: 1px solid #EBEBEB;
-  box-sizing: border-box;
-  border-radius: 6px 6px 0px 0px;
+.firstrow{
+  border-left: 1px solid #EBEBEB;
+  border-radius: 6px;
+}
 
+.lastrow{
+  border-right: 1px solid #EBEBEB;
+  border-radius: 6px;
+}
+
+.bordered th {
   font-family: Nunito Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
   /* identical to box height, or 117% */
-
-  border-radius: 6%;
-
-  color: #666666;
+  height: 30px;
+  background: rgba(235, 235, 235, 0.4);
+  border: 0px solid #EBEBEB;
+  box-sizing: border-box;
+  border-radius: 0px 0px 0px 0px;
 }
 
-.profile{
-  border-radius: 50%;
-}
-
-.user{
+.bordered td{
   height: 60px;
   font-family: Nunito Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  /* identical to box height, or 117% */
+  /* identical to box height, or 129% */
+  align-items: center;
+  border-top: 1px solid #EBEBEB;
+
+  color: #333333;
+}
+
+.profile{
+  border-radius: 50%;
 }
 
 .emailid {
@@ -76,12 +110,8 @@
 
 .childWrapper > li {
   float: left;
-  padding-top: 5%;
+  /* padding-top: 5%;*/
   padding-left: 5%;
-}
-
-.childWrapper > li.colorbox{
-  padding-top: 6.5%;
 }
 
 .edit {

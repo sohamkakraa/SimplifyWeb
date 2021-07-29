@@ -10,8 +10,8 @@ import { ICity, ICountry, IState } from 'country-state-city/dist/lib/interface';
 })
 export class ReviewAdComponent implements OnInit {
 
-  @Input() next: string = "assign-role";
-  @Input() previous: string = "personal-details";
+  @Input() next: string = "review-ar";
+  @Input() previous: string = "review-pd";
   
   country: ICountry = {  "isoCode": "IN",  "name": "India",  "phonecode": "91",  "flag": "🇮🇳",  "currency": "INR",  "latitude": "20.00000000",  "longitude": "77.00000000",   "timezones": [{  "zoneName": "Asia\/Kolkata",  "gmtOffset": 19800,  "gmtOffsetName": "UTC+05:30",  "abbreviation": "IST",  "tzName": "Indian Standard Time"  }]  };
   countryList: ICountry[] = Country.getAllCountries();
@@ -26,8 +26,34 @@ export class ReviewAdComponent implements OnInit {
 
   constructor(private router: Router) {}
 
+  statusManager(str: string){
+    if(str === "Active")
+      return "green";
+    else if(str === "Draft")
+      return "yellow";
+    else if(str === "Pending Approval")
+      return "orange";
+    else if(str === "Inactive")
+      return "grey";
+    else
+      return "red";
+  }
+  
   ngOnInit() {
     this.href = this.router.url;
   }
+  public show:boolean = false;
+  @Input() bodyRight?: string;
 
+  remarks() {
+    this.show = !this.show;
+  }
+
+  closeSideMenu(){
+    if(this.show){
+      return  this.bodyRight = '25%';
+    }else{
+      return  this.bodyRight = '0%'
+    }
+  }
 }

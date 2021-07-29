@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Remark } from '../../Remark';
+import { REMARKS } from '../../mock-remarks';
 
 @Component({
   selector: 'app-remarks',
@@ -7,17 +9,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RemarksComponent implements OnInit {
 
+  remarksArray: Remark[] = REMARKS;
+
+  show:boolean = false;
+  typing:boolean = false;
   showRemarks:boolean = true;
   showChanges:boolean = false;
   color1:string = '#154454';
   color2:string = '#666666';
   weight1:string = '600';
   weight2:string = 'normal';
-  tableEmpty:boolean = true;
+  tableEmpty:boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  remarks() {
+    this.show = !this.show;
+  }
+
+  typed() {
+    this.typing = true;
   }
 
   Switch1() {

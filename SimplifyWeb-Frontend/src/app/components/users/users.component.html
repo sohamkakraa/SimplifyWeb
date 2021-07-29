@@ -68,21 +68,21 @@
   <tr class="titlebar" mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table> -->
-<table class="table">
+<table class="bordered">
     <thead>
-        <tr class="titlebar">
-            <th [appSort]="users" data-order="desc" data-name="firstname" scope="col">User Name <img class="up" src="assets/Vector.png"></th>
-            <th [appSort]="users" data-order="desc" data-name="usertype" scope="col">User Type <img class="up" src="assets/Vector.png"></th>
-            <th [appSort]="users" data-order="desc" data-name="role" scope="col">Role <img class="up" src="assets/Vector.png"></th>
-            <th scope="col">#Customers</th>
-            <th [appSort]="users" data-order="desc" data-name="updatedOnDate" scope="col">Updated On <img class="up" src="assets/Vector.png"></th>
-            <th [appSort]="users" data-order="desc" data-name="status" scope="col">Status <img class="up" src="assets/Vector.png"></th>
-            <th scope="col">Actions</th>
+        <tr class="titlebar" style="height: 30px;">
+            <th height="30" [appSort]="users" data-order="desc" data-name="firstname" scope="col">User Name <img class="up" src="assets/Vector.png"></th>
+            <th height="30" [appSort]="users" data-order="desc" data-name="usertype" scope="col">User Type <img class="up" src="assets/Vector.png"></th>
+            <th height="30" [appSort]="users" data-order="desc" data-name="role" scope="col">Role <img class="up" src="assets/Vector.png"></th>
+            <th height="30" scope="col">#Customers</th>
+            <th height="30" [appSort]="users" data-order="desc" data-name="updatedOnDate" scope="col">Updated On <img class="up" src="assets/Vector.png"></th>
+            <th height="30" [appSort]="users" data-order="desc" data-name="status" scope="col">Status <img class="up" src="assets/Vector.png"></th>
+            <th height="30" scope="col">Actions</th>
         </tr>
     </thead>
 
     <tr class="user" *ngFor="let user of users">
-        <td><img class="profile" [src]="user.profile" /> {{user.firstname}} {{user.lastname}}</td>
+        <td class="firstrow"><img class="profile" [src]="user.profile" /> {{user.firstname}} {{user.lastname}}</td>
         <td>{{user.usertype}}</td>
         <td>{{roleManager(user.role)}}</td>
         <td>{{customerManager(user.customers)}}</td>
@@ -91,7 +91,7 @@
             <li class="colorbox"><div class="box" [ngStyle]="{'background-color' : statusManager(user.status)}"></div></li>
             <li>{{user.status}}</li>
         </td>
-        <td>
+        <td class="lastrow">
             <a routerLink="/review-pd" user="user">
                 <div class="edit">
                     <img src="assets/VectorNote.svg" class="note"> 

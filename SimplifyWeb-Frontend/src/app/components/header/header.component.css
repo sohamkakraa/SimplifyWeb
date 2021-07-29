@@ -1,13 +1,229 @@
 .header {
     position: absolute;
     width: 95.5%;
-    height: 10%;
+    height: 11%;
     left: 4.25%;
     top: 6.25%;
 
     background: #FFFFFF;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
     border-radius: 0px 0px 16px 16px;
+}
+
+.all{
+    position: fixed;
+    left: 6%;
+    right: 87.77%;
+    top: 13%;
+    bottom: 83.72%;
+
+    background: #FFFFFF;
+    border: 0 solid;
+    
+    font-family: Nunito Sans;
+    font-style: normal;
+    /* font-weight: 600; */
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 150% */
+    display: flex;
+    align-items: center;
+}
+
+.choice1{
+    position: fixed;
+    width: 20px;
+    height: 0px;
+    left: 6.5%;
+    top: 16%;
+    
+    border: 2px solid #0783B6;
+    border-radius: 25%;
+}
+
+.draft{
+    position: fixed;
+    left: 9%;
+    right: 87.77%;
+    top: 13%;
+    bottom: 83.72%;
+
+    background: #FFFFFF;
+    border: 0 solid;
+    
+    font-family: Nunito Sans;
+    font-style: normal;
+    /* font-weight: normal; */
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 150% */
+    display: flex;
+    align-items: center;
+}
+
+.choice2{
+    position: fixed;
+    width: 50px;
+    height: 0px;
+    left: 9.5%;
+    top: 16%;
+    
+    border: 2px solid #0783B6;
+    border-radius: 25%;
+}
+
+.pa{
+    position: fixed;
+    left: 14%;
+    top: 13%;
+    bottom: 83.72%;
+
+    background: #FFFFFF;
+    border: 0 solid;
+    
+    font-family: Nunito Sans;
+    font-style: normal;
+    /* font-weight: normal; */
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 150% */
+    display: flex;
+    align-items: center;
+}
+
+.choice3{
+    position: fixed;
+    width: 140px;
+    height: 0px;
+    left: 14.5%;
+    top: 16%;
+    
+    border: 2px solid #0783B6;
+    border-radius: 25%;
+}
+
+.submitted{
+    position: fixed;
+    left: 25%;
+    right: 87.77%;
+    top: 13%;
+    bottom: 83.72%;
+
+    background: #FFFFFF;
+    border: 0 solid;
+    
+    font-family: Nunito Sans;
+    font-style: normal;
+    /* font-weight: normal; */
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 150% */
+    display: flex;
+    align-items: center;
+}
+
+.choice4{
+    position: fixed;
+    width: 80px;
+    height: 0px;
+    left: 25.5%;
+    top: 16%;
+    
+    border: 2px solid #0783B6;
+    border-radius: 25%;
+}
+
+.active{
+    position: fixed;
+    left: 32%;
+    right: 87.77%;
+    top: 13%;
+    bottom: 83.72%;
+
+    background: #FFFFFF;
+    border: 0 solid;
+    
+    font-family: Nunito Sans;
+    font-style: normal;
+    /* font-weight: normal; */
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 150% */
+    display: flex;
+    align-items: center;
+}
+
+.choice5{
+    position: fixed;
+    width: 50px;
+    height: 0px;
+    left: 32.5%;
+    top: 16%;
+    
+    border: 2px solid #0783B6;
+    border-radius: 25%;
+}
+
+.inactive{
+    position: fixed;
+    left: 38%;
+    right: 87.77%;
+    top: 13%;
+    bottom: 83.72%;
+
+    background: #FFFFFF;
+    border: 0 solid;
+    
+    font-family: Nunito Sans;
+    font-style: normal;
+    /* font-weight: normal; */
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 150% */
+    display: flex;
+    align-items: center;
+}
+
+.choice6{
+    position: fixed;
+    width: 60px;
+    height: 0px;
+    left: 38.5%;
+    top: 16%;
+    
+    border: 2px solid #0783B6;
+    border-radius: 25%;
+}
+
+.rejected{
+    position: fixed;
+    left: 44%;
+    right: 87.77%;
+    top: 13%;
+    bottom: 83.72%;
+
+    background: #FFFFFF;
+    border: 0 solid;
+    
+    font-family: Nunito Sans;
+    font-style: normal;
+    /* font-weight: normal; */
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 150% */
+    display: flex;
+    align-items: center;
+}
+
+.choice7{
+    position: fixed;
+    width: 70px;
+    height: 0px;
+    left: 44.5%;
+    top: 16%;
+    
+    border: 2px solid #0783B6;
+    border-radius: 25%;
 }
 
 .search {
@@ -68,7 +284,7 @@
     border-radius: 1px;
     height: 32px;
     width: 105px;
-    margin-top: -0.5%;
+    margin-top: -0.25%;
     margin-left: 90%;
 
 }
@@ -80,7 +296,7 @@
     width: 105px;
     left: 91.73%;
     right: 2.93%;
-    top: 9.11%;
+    top: 10%;
     bottom: 88.28%;
     border: 0px solid #E0E0E0;
 
@@ -151,7 +367,7 @@
     overflow: hidden;
 }
 
-.all {
+/* .all {
     position: fixed;
     left: 6%;
     right: 92.61%;
@@ -165,9 +381,9 @@
     right: 87.77%;
     top: 13%;
     bottom: 83.72%;
-}
+} */
 
-.pa {
+/* .pa {
     position: fixed;
     left: 14.57%;
     top: 13%;
@@ -204,4 +420,4 @@
     right: 64.28%;
     top: 13%;
     bottom: 83.72%;
-}
+} */

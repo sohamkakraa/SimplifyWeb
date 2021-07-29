@@ -3,7 +3,7 @@
     <div class="choice1" *ngIf="showRemarks"></div>
     <button class="changes" [style.color]='color2' [style.font-weight]='weight2' (click)="Switch2()">Changes</button>
     <div class="choice2" *ngIf="showChanges"></div>
-    <div class="add">
+    <div class="add" (click)="remarks()">
         <div class="up"></div>
         <div class="down"></div>
     </div>
@@ -13,9 +13,40 @@
     </div>
     <hr class="seperation">
     <div class="remarksBody" *ngIf="showRemarks">
-        <div *ngIf="tableEmpty">
+
+        <div *ngIf="tableEmpty && !show">
             <div class="cirle"><img class="commentLogo" src="assets/Vectorcomment.png"></div>
             <p class="text">Your remarks will appear here<br>Select a section to add remark</p>
         </div>
+
+        <table class="table" *ngIf="!tableEmpty">
+            <tr class="savedRemark" *ngFor="let remark of remarksArray">
+                <td>
+                    <p class="creator">{{remark.creator}}</p>
+                    <p class="datetime">{{remark.date}}, {{remark.time}}</p>
+                    <p class="remarkText">{{remark.text}}</p>
+                    <div class="edit">
+                        <img class="notepad" src="assets/Vectornotepad.png">
+                        <img class="pencil" src="assets/Vectorpencil.png">
+                    </div>
+                    <img class="dustbin" src="assets/Vectordustbin.png">
+                </td>
+            </tr>
+        </table>
+
+        <div class="newRemark" *ngIf="show">
+            <input class="enterText" type="text" placeholder="Write your remark here" (change)="typed()" />
+            <div class="cancel" (click)="remarks()">
+                <img src="assets/Vectorline.svg" class="right1"> 
+                <img src="assets/Vectorline.svg" class="left1"> 
+            </div>
+            <div class="approvegrey" *ngIf="!typing">
+                <img src="assets/Vectortick.png" class="tick"> 
+            </div>
+            <div class="approvegreen" *ngIf="typing">
+                <img src="assets/Vectortick2.svg" class="tick"> 
+            </div>
+        </div>
+
     </div>
 </div>

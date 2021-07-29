@@ -11,9 +11,6 @@ import { User } from 'src/app/User';
 })
 export class ReviewPdComponent implements OnInit {
   @Input() user?: User;
-  @Input() bodyRight?: string;
-
-  public show:boolean = false;
 
   title: string = 'Mr.';
   titleList: string[] = ['Mr.', 'Miss.'];
@@ -47,13 +44,16 @@ export class ReviewPdComponent implements OnInit {
     else
       return "red";
   }
+  
+  @Input() next: string = "review-ad";
+  @Input() previous: string = "users";
+
+  public show:boolean = false;
+  @Input() bodyRight?: string;
 
   remarks() {
     this.show = !this.show;
   }
-  
-  @Input() next: string = "review-ad";
-  @Input() previous: string = "users";
 
   closeSideMenu(){
     if(this.show){

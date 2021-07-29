@@ -1,13 +1,28 @@
 <div class="header">
     <h1 class="heading">Users</h1>
     <div class="navbar">
-        <div class="subnav">
+        <button class="all" [style.color]='color1' [style.font-weight]='weight1' (click)="Switch1()">All</button>
+        <div class="choice1" *ngIf="showAll"></div>
+        <button class="draft" [style.color]='color2' [style.font-weight]='weight2' (click)="Switch2()">Drafts</button>
+        <div class="choice2" *ngIf="showDrafts"></div>
+        <button class="pa" [style.color]='color3' [style.font-weight]='weight3' (click)="Switch3()">Pending Approval</button>
+        <div class="choice3" *ngIf="showPA"></div>
+        <button class="submitted" [style.color]='color4' [style.font-weight]='weight4' (click)="Switch4()">Submitted</button>
+        <div class="choice4" *ngIf="showSub"></div>
+        <button class="active" [style.color]='color5' [style.font-weight]='weight5' (click)="Switch5()">Active</button>
+        <div class="choice5" *ngIf="showActive"></div>
+        <button class="inactive" [style.color]='color6' [style.font-weight]='weight6' (click)="Switch6()">Inactive</button>
+        <div class="choice6" *ngIf="showInactive"></div>
+        <button class="rejected" [style.color]='color7' [style.font-weight]='weight7' (click)="Switch7()">Rejected</button>
+        <div class="choice7" *ngIf="showRejected"></div>
+
+        <!-- <div class="subnav">
             <a class="all active-page" href="/">All</a>
         </div>
         <div class="subnav">
             <a class="draft" href="/drafts">Draft</a>
-        </div>
-        <div class="subnav">
+        </div> -->
+        <!-- <div class="subnav">
             <a class="pa" href="/pa">Pending Approval</a>
         </div>
         <div class="subnav">
@@ -21,7 +36,7 @@
         </div>
         <div class="subnav">
             <a class="rejected" href="/rejected">Rejected</a>
-        </div>
+        </div> -->
     </div>
     <div class="search">
         <img src="assets/Oval.svg" class="oval"> 

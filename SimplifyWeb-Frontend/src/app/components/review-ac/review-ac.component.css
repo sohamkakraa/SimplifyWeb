@@ -3,7 +3,6 @@
     bottom: 8%;
     left: 4.25%;
     top: 20%;
-    right: 0%;
 
     overflow-y: scroll;
 
@@ -12,10 +11,135 @@
     border-radius: 6px;
 }
 
+.userid{
+    position: absolute;
+    width: 103px;
+    height: 28px;
+    left: 20%;
+    top: 2.5%;
+
+    background: #E3F5FC;
+    border-radius: 30px;
+
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height, or 117% */
+    display: flex;
+    align-items: center;
+    color: #666666;
+}
+
+.usertype{
+    position: absolute;
+    width: 103px;
+    height: 28px;
+    left: 32.5%;
+    top: 2.55%;
+    
+    background: #E3F5FC;
+    border-radius: 30px;
+
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height, or 117% */
+    display: flex;
+    align-items:center;
+    color: #666666;
+}
+
+.userstatus{
+    position: absolute;
+    width: 103px;
+    height: 28px;
+    left: 45%;
+    top: 2.55%;
+
+    background: #E3F5FC;
+    border-radius: 30px;
+
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height, or 117% */
+    text-align: center;
+    color: #666666;
+}
+
+.childWrapper {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .childWrapper > li {
+    float: left;
+    padding-top: 6%;
+    padding-left: 12.5%;
+  }
+
+  .box{
+    width: 12px;
+    height: 12px;
+    margin-left: -40%;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 2px;
+  }
+
+.remark{
+    position: absolute;
+    width: 112px;
+    height: 32px;
+    left: 90%;
+    top: 2.5%;
+
+    background: #EBEBEB;
+    border: 0px solid #FFFFFF;
+    border-radius: 6px;
+
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+    display: flex;
+    align-items: center;
+
+    color: #0783B6;
+}
+
+.comment{
+    margin-top: 10%;
+    margin-left: 15%;
+}
+
+.line1{
+    margin-top: -10%;
+    margin-left: -15%;
+}
+
+.line2{
+    margin-top: -5%;
+    margin-left: -10%;
+}
+.line3{
+    margin-top: 1%;
+    margin-left: -8%;
+}
+
 .heading{
     position: absolute;
-    left: 31.19%;
-    top: 5%;
+    left: 20%;
+    top: 10%;
 
     font-family: Nunito Sans;
     font-style: normal;
@@ -32,8 +156,8 @@
 
 .info {
     position: absolute;
-    left: 31.19%;
-    top: 10%;
+    left: 20%;
+    top: 15%;
     
     font-family: Nunito Sans;
     font-style: normal;
@@ -51,8 +175,8 @@
     position: absolute;
     width: 584px;
     height: 30px;
-    left: 31.19%;
-    top: 20%;
+    left: 20%;
+    top: 25%;
 
     background: #FFFFFF;
     border: 1px solid #EBEBEB;
@@ -87,8 +211,8 @@
 .table {
     position: absolute;
     width: 584px;
-    left: 31.19%;
-    top: 26%;
+    left: 20%;
+    top: 31%;
     
     /* white */
     background: #F3F6F9;
