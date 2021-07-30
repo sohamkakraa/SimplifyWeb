@@ -3,6 +3,7 @@
   border-radius: 6px 6px 6px 6px;
   box-shadow: 0 1px 1px #CCCCCC;
 }
+
 table {
   border-spacing: 0;
   position: absolute;
@@ -159,4 +160,136 @@ table {
   position: absolute;
   top: 60%;
   border: 0px solid #707070;
+}
+
+.history{
+  transition: width 2s linear 1s;
+  position: absolute;
+  width: 401px;
+  right: 0%;
+  top: -1px;
+  bottom: 0%;
+
+  backdrop-filter: blur(2px);
+
+  background: #FFFFFF;
+  box-shadow: -4px 0px 12px rgba(0, 0, 0, 0.16);
+  border-radius: 10px 0px 0px 10px;
+}
+
+.header{
+  position: absolute;
+  left: 2%;
+  top: 2%;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+  display: flex;
+  align-items: center;
+  
+  color: #154454;
+}
+
+.close{
+  position: absolute;
+  left: 95%;
+  top: 2%;
+  font-family: Nunito Sans;
+  font-style:normal;
+  font-weight:lighter;
+  color: #154454;
+}
+
+.username{
+  position: absolute;
+  width: 117px;
+  height: 28px;
+  left: 2%;
+  top: 8%;
+  
+  background: #EAF0FF;
+  border-radius: 30px;
+}
+
+.role{
+  position: absolute;
+  width: 117px;
+  height: 28px;
+  left: 32%;
+  top: 8%;
+  
+  background: #EAF0FF;
+  border-radius: 30px;
+}
+
+.status{
+  position: absolute;
+  width: 117px;
+  height: 28px;
+  left: 62%;
+  top: 8%;
+  
+  background: #EAF0FF;
+  border-radius: 30px;
+}
+
+.historyTable{
+  position: absolute;
+  width: 369px !important;
+  left: 2%;
+  top: 15%;
+}
+
+.text{
+  margin-left: 5%;
+  margin-top: -4%;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height, or 129% */
+  display: flex;
+  align-items: center;
+  
+  color: #154454;
+}
+
+.creator{
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height, or 117% */
+  display: flex;
+  align-items: center;
+  
+  color: #AAAAAA;
+}
+.datetime{
+  margin-left: 60%;
+  margin-top: -7%;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height, or 117% */
+  display: flex;
+  align-items: center;
+  text-align: right;
+  
+  color: #AAAAAA;
+}
+
+.circle{
+  margin-top: 2%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #DBDBDB;
 }

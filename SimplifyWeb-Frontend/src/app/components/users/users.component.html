@@ -1,113 +1,65 @@
 <app-header ></app-header>
-<!-- <table mat-table [dataSource]="dataSource" class="table">
 
-    <ng-container matColumnDef="id">
-        <th mat-header-cell *matHeaderCellDef> User ID </th>
-        <td mat-cell *matCellDef="let user"> {{user.id}} </td>
-    </ng-container>
+<body class="unfiltered">
+    <table class="bordered">
+        <thead>
+            <tr class="titlebar" style="height: 30px;">
+                <th height="30" [appSort]="users" data-order="desc" data-name="firstname" scope="col">User Name <img class="up" src="assets/Vector.png"></th>
+                <th height="30" [appSort]="users" data-order="desc" data-name="usertype" scope="col">User Type <img class="up" src="assets/Vector.png"></th>
+                <th height="30" [appSort]="users" data-order="desc" data-name="role" scope="col">Role <img class="up" src="assets/Vector.png"></th>
+                <th height="30" scope="col">#Customers</th>
+                <th height="30" [appSort]="users" data-order="desc" data-name="updatedOnDate" scope="col">Updated On <img class="up" src="assets/Vector.png"></th>
+                <th height="30" [appSort]="users" data-order="desc" data-name="status" scope="col">Status <img class="up" src="assets/Vector.png"></th>
+                <th height="30" scope="col">Actions</th>
+            </tr>
+        </thead>
 
-    <ng-container matColumnDef="username">
-        <th mat-header-cell *matHeaderCellDef> User Name </th>
-        <td mat-cell *matCellDef="let user"> 
-            <p>{{user.firstname}} {{user.lastname}}</p>
-        </td>
-    </ng-container>
-
-    <ng-container matColumnDef="role">
-        <th mat-header-cell *matHeaderCellDef> Role </th> 
-        <td mat-cell *matCellDef="let user"> {{roleManager(user.role)}} </td>
-    </ng-container>
-
-    <ng-container matColumnDef="usertype">
-        <th mat-header-cell *matHeaderCellDef> User Type </th>
-        <td mat-cell *matCellDef="let user"> {{user.usertype}} </td>
-    </ng-container>
-
-    <ng-container matColumnDef="customers">
-        <th mat-header-cell *matHeaderCellDef> #Customers </th>
-        <td mat-cell *matCellDef="let user"> {{customerManager(user.customers)}} </td>
-    </ng-container>
-
-    <ng-container matColumnDef="updatedOn">
-        <th mat-header-cell *matHeaderCellDef> Updated On </th>
-        <td mat-cell *matCellDef="let user"> 
-            <p>{{user.updatedOnDate}}</p>
-            <p class="updatedOnTime">{{user.updatedOnTime}}</p>
-        </td>
-    </ng-container>
-
-    <ng-container matColumnDef="status">
-        <th mat-header-cell *matHeaderCellDef> Status </th>
-        <td mat-cell *matCellDef="let user" class="childWrapper">
-            <li><div class="box" [ngStyle]="{'background-color' : statusManager(user.status)}"></div></li>
-            <li>{{user.status}}</li>
-        </td>
-    </ng-container>
-
-    <ng-container matColumnDef="actions">
-        <th mat-header-cell *matHeaderCellDef> Actions </th>
-        <td mat-cell *matCellDef="let user"> 
-            <a routerLink="/review-pd" user="user">
-                <div class="edit">
-                    <img src="assets/VectorNote.svg" class="note"> 
-                    <img src="assets/VectorPen.svg" class="pen"> 
+        <tr class="user" *ngFor="let user of users">
+            <td class="firstrow"><img class="profile" [src]="user.profile" /> {{user.firstname}} {{user.lastname}}</td>
+            <td>{{user.usertype}}</td>
+            <td>{{roleManager(user.role)}}</td>
+            <td>{{customerManager(user.customers)}}</td>
+            <td>{{user.updatedOnDate}}, {{user.updatedOnTime}}</td>
+            <td class="childWrapper">
+                <li class="colorbox"><div class="box" [ngStyle]="{'background-color' : statusManager(user.status)}"></div></li>
+                <li>{{user.status}}</li>
+            </td>
+            <td class="lastrow">
+                <a routerLink="/review-pd" user="user">
+                    <div class="edit">
+                        <img src="assets/VectorNote.svg" class="note"> 
+                        <img src="assets/VectorPen.svg" class="pen"> 
+                    </div>
+                </a>
+                <div class="undo" (click)="showRP()">
+                    <img src="assets/VectorClock.svg" class="clock"> 
+                    <img src="assets/VectorSPen.svg" class="spen"> 
                 </div>
-            </a>
-            <div class="undo">
-                <img src="assets/VectorClock.svg" class="clock"> 
-                <img src="assets/VectorSPen.svg" class="spen"> 
-            </div>
-            <div class="more">
-                <img src="assets/VectorButton.svg" class="button1"> 
-                <img src="assets/VectorButton.svg" class="button2">
-                <img src="assets/VectorButton.svg" class="button3">  
-            </div>
-        </td>
-    </ng-container>
-    
-  <tr class="titlebar" mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-</table> -->
-<table class="bordered">
-    <thead>
-        <tr class="titlebar" style="height: 30px;">
-            <th height="30" [appSort]="users" data-order="desc" data-name="firstname" scope="col">User Name <img class="up" src="assets/Vector.png"></th>
-            <th height="30" [appSort]="users" data-order="desc" data-name="usertype" scope="col">User Type <img class="up" src="assets/Vector.png"></th>
-            <th height="30" [appSort]="users" data-order="desc" data-name="role" scope="col">Role <img class="up" src="assets/Vector.png"></th>
-            <th height="30" scope="col">#Customers</th>
-            <th height="30" [appSort]="users" data-order="desc" data-name="updatedOnDate" scope="col">Updated On <img class="up" src="assets/Vector.png"></th>
-            <th height="30" [appSort]="users" data-order="desc" data-name="status" scope="col">Status <img class="up" src="assets/Vector.png"></th>
-            <th height="30" scope="col">Actions</th>
+                <div class="more">
+                    <img src="assets/VectorButton.svg" class="button1"> 
+                    <img src="assets/VectorButton.svg" class="button2">
+                    <img src="assets/VectorButton.svg" class="button3">  
+                </div>
+            </td>
         </tr>
-    </thead>
+    </table>
+</body>
 
-    <tr class="user" *ngFor="let user of users">
-        <td class="firstrow"><img class="profile" [src]="user.profile" /> {{user.firstname}} {{user.lastname}}</td>
-        <td>{{user.usertype}}</td>
-        <td>{{roleManager(user.role)}}</td>
-        <td>{{customerManager(user.customers)}}</td>
-        <td>{{user.updatedOnDate}}, {{user.updatedOnTime}}</td>
-        <td class="childWrapper">
-            <li class="colorbox"><div class="box" [ngStyle]="{'background-color' : statusManager(user.status)}"></div></li>
-            <li>{{user.status}}</li>
-        </td>
-        <td class="lastrow">
-            <a routerLink="/review-pd" user="user">
-                <div class="edit">
-                    <img src="assets/VectorNote.svg" class="note"> 
-                    <img src="assets/VectorPen.svg" class="pen"> 
-                </div>
-            </a>
-            <div class="undo">
-                <img src="assets/VectorClock.svg" class="clock"> 
-                <img src="assets/VectorSPen.svg" class="spen"> 
-            </div>
-            <div class="more">
-                <img src="assets/VectorButton.svg" class="button1"> 
-                <img src="assets/VectorButton.svg" class="button2">
-                <img src="assets/VectorButton.svg" class="button3">  
-            </div>
+<div class="history"  *ngIf="showRightPanel">
+    <h1 class="header">View History</h1>
+    <button class="close" (click)="showRP()">x</button>
+    <hr style="border: 1px solid #555252; margin-top: 12.5%;">
+    <div class="username"></div>
+    <div class="role"></div>
+    <div class="status"></div>
+    <table class="historyTable">
+    <tr *ngFor = "let history of histories">
+        <td  style="border-top: 1px solid #EBEBEB; border-bottom: 1px solid #EBEBEB;">
+            <div class="circle"></div>
+            <p class="text">{{history.text}}</p>
+            <p class="creator">{{history.creator}}</p>
+            <p class="datetime">{{history.date}}, {{history.time}}</p>
         </td>
     </tr>
-
-</table>
+    </table>
+</div>

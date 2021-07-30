@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { USERS } from '../../mock-users';
 import { User } from '../../User';
+import { HISTORY } from '../../mock-history';
+import { History } from '../../History';
 
 @Component({
   selector: 'app-users',
@@ -12,8 +14,15 @@ export class UsersComponent implements OnInit {
   users: User[] = USERS;
   displayedColumns: string[] = ['username', 'role', 'usertype', 'customers', 'updatedOn', 'status', 'actions'];
   dataSource = this.users;
+  histories: History[] = HISTORY;
+  background: string = "#DBDBDB";
   
   constructor() { }
+  showRightPanel:boolean = false;
+
+  showRP(){
+    this.showRightPanel = !this.showRightPanel;
+  }
 
   roleManager(str: string) {
     if(!str.localeCompare("")){
